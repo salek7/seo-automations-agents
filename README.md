@@ -18,6 +18,7 @@ A collection of ready-to-use SEO automations and AI agents that will help you op
 | [Keyword Intent Classification](workflows/make/seo/keyword-research/intent-classification/) | Keyword Research | ⏳ In Queue | ❌ | ❌ | ❌ | Classifies keywords by user intent |
 | [AI Overviews Monitor](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ⏳ In Queue | ❌ | ❌ | ❌ | Tracks presence in Google AI Overviews |
 | [Rapid Keyword Research](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ⏳ In Queue | ❌ | ❌ | ❌ | Replaces hours of work with seconds of automation |
+| [Keyword Clustering](workflows/make/seo/keyword-research/keyword-clustering/) | Keyword Research | ⏳ In Queue | ❌ | ❌ | ❌ | Groups keywords based on shared URLs in search results |
 
 **Status Legend:**
 - 🔄 **In Progress** - Currently being developed and tested
