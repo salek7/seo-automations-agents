@@ -1,105 +1,105 @@
-# Klasteryzacja słów kluczowych - Make
+# Keyword Clustering - Make
 
-## Opis automatyzacji
+## Automation Description
 
-Automatyzacja do grupowania słów kluczowych na podstawie współwystępowania tych samych adresów URL w wynikach wyszukiwania Google. Słowa kluczowe, które prowadzą do podobnych stron, są grupowane w logiczne klastry.
+Automation for grouping keywords based on the co-occurrence of the same URLs in Google search results. Keywords that lead to similar pages are grouped into logical clusters.
 
-## Funkcjonalności
+## Features
 
-### Główne możliwości:
-- **Pobieranie wyników wyszukiwania** - automatyczne pobieranie URL-i z Google dla każdego słowa kluczowego
-- **Analiza współwystępowania URL-i** - identyfikacja wspólnych domen i stron między słowami kluczowymi
-- **Klasteryzacja na podstawie URL-i** - grupowanie słów kluczowych według podobieństwa wyników
-- **Wizualizacja klastrów** - generowanie wykresów i diagramów pokazujących relacje
-- **Eksport wyników** - zapisywanie klastrów do CSV, Excel lub JSON
+### Main capabilities:
+- **Search Results Retrieval** - automatic extraction of URLs from Google for each keyword
+- **URL Co-occurrence Analysis** - identification of common domains and pages between keywords
+- **URL-based Clustering** - grouping keywords based on result similarity
+- **Cluster Visualization** - generation of charts and diagrams showing relationships
+- **Results Export** - saving clusters to CSV, Excel or JSON
 
-### Dodatkowe funkcje:
-- **Analiza domen** - identyfikacja głównych domen w klastrach
-- **Filtrowanie wyników** - usuwanie nieistotnych URL-i
-- **Analiza konkurencji** - porównanie z konkurencyjnymi stronami
-- **Priorytetyzacja klastrów** - ranking według potencjału i wolumenu
+### Additional features:
+- **Domain Analysis** - identification of main domains in clusters
+- **Results Filtering** - removal of irrelevant URLs
+- **Competitive Analysis** - comparison with competitor pages
+- **Cluster Prioritization** - ranking by potential and volume
 
-## Struktura automatyzacji
+## Automation Structure
 
-### Moduły:
-1. **Input Processing** - przetwarzanie listy słów kluczowych
-2. **Search Results Scraping** - pobieranie wyników z Google dla każdego słowa kluczowego
-3. **URL Extraction** - wyciąganie adresów URL z wyników wyszukiwania
-4. **Similarity Analysis** - obliczanie podobieństwa między słowami kluczowymi na podstawie wspólnych URL-i
-5. **Clustering Algorithm** - algorytm grupowania (Jaccard Similarity)
-6. **Cluster Analysis** - analiza i walidacja klastrów
-7. **Visualization** - generowanie wykresów
-8. **Export** - eksport wyników
+### Modules:
+1. **Input Processing** - processing the keyword list
+2. **Search Results Scraping** - retrieving results from Google for each keyword
+3. **URL Extraction** - extracting URLs from search results
+4. **Similarity Analysis** - calculating similarity between keywords based on shared URLs
+5. **Clustering Algorithm** - grouping algorithm (Jaccard Similarity)
+6. **Cluster Analysis** - analysis and validation of clusters
+7. **Visualization** - chart generation
+8. **Export** - results export
 
-### Integracje:
-- **Google Search API/SerpAPI** - pobieranie wyników wyszukiwania
-- **Google Sheets** - import/eksport danych
-- **Airtable** - zarządzanie klastrami
-- **Slack/Teams** - powiadomienia o gotowych klastrach
-- **Google Analytics** - analiza ruchu dla klastrów
+### Integrations:
+- **Google Search API/SerpAPI** - search results retrieval
+- **Google Sheets** - data import/export
+- **Airtable** - cluster management
+- **Slack/Teams** - notifications about completed clusters
+- **Google Analytics** - traffic analysis for clusters
 
-## Konfiguracja
+## Configuration
 
-### Wymagane API:
-- Google Search API lub SerpAPI (klucz)
-- Google Sheets API (opcjonalnie)
-- Airtable API (opcjonalnie)
+### Required APIs:
+- Google Search API or SerpAPI (key)
+- Google Sheets API (optional)
+- Airtable API (optional)
 
-### Parametry wejściowe:
-- Lista słów kluczowych (CSV/Excel)
-- Liczba wyników do analizy (domyślnie 10)
-- Próg podobieństwa (0.1-1.0)
-- Minimalna wielkość klastra
-- Filtry domen (opcjonalnie)
+### Input parameters:
+- Keyword list (CSV/Excel)
+- Number of results to analyze (default: 10)
+- Similarity threshold (0.1-1.0)
+- Minimum cluster size
+- Domain filters (optional)
 
-## Wyniki
+## Results
 
-### Format wyjściowy:
-- **Klastry z nazwami** - pogrupowane słowa kluczowe z opisami
-- **Wspólne URL-e** - lista adresów URL występujących w klastrze
-- **Statystyki klastrów** - wielkość, gęstość, jakość
-- **Wizualizacje** - wykresy podobieństwa i hierarchii
-- **Raport analityczny** - szczegółowe podsumowanie
+### Output format:
+- **Named clusters** - grouped keywords with descriptions
+- **Shared URLs** - list of URLs occurring in the cluster
+- **Cluster statistics** - size, density, quality
+- **Visualizations** - similarity and hierarchy charts
+- **Analytical report** - detailed summary
 
-### Metryki:
-- **Jaccard Index** - współczynnik podobieństwa między słowami kluczowymi
-- **Cluster density** - gęstość URL-i w klastrze
-- **Domain diversity** - różnorodność domen w klastrze
-- **Search volume** - suma wolumenu wyszukiwań w klastrze
+### Metrics:
+- **Jaccard Index** - similarity coefficient between keywords
+- **Cluster density** - URL density in cluster
+- **Domain diversity** - domain diversity in cluster
+- **Search volume** - sum of search volumes in cluster
 
-## Zastosowania
+## Applications
 
 ### SEO:
-- Organizacja kampanii PPC
-- Planowanie treści
-- Analiza nisz tematycznych
-- Optymalizacja struktury strony
+- PPC campaign organization
+- Content planning
+- Topic niche analysis
+- Website structure optimization
 
 ### Content Marketing:
-- Planowanie kalendarza treści
-- Identyfikacja luk tematycznych
-- Analiza trendów
-- Personalizacja treści
+- Content calendar planning
+- Topic gap identification
+- Trend analysis
+- Content personalization
 
-## Instrukcja użycia
+## Usage Instructions
 
-1. **Przygotuj dane** - lista słów kluczowych w formacie CSV
-2. **Skonfiguruj parametry** - ustaw próg podobieństwa i liczbę wyników
-3. **Uruchom automatyzację** - wykonaj scenario w Make
-4. **Przejrzyj klastry** - sprawdź jakość grupowania
-5. **Eksportuj wyniki** - zapisz do wybranej platformy
+1. **Prepare data** - keyword list in CSV format
+2. **Configure parameters** - set similarity threshold and number of results
+3. **Run automation** - execute scenario in Make
+4. **Review clusters** - check grouping quality
+5. **Export results** - save to chosen platform
 
-## Wymagania techniczne
+## Technical Requirements
 
 - Make.com account
-- Google Search API lub SerpAPI access
-- Podstawowa znajomość SEO
-- Dostęp do danych słów kluczowych
+- Google Search API or SerpAPI access
+- Basic SEO knowledge
+- Access to keyword data
 
-## Wsparcie
+## Support
 
-W przypadku problemów z automatyzacją, sprawdź:
-- Poprawność formatu danych wejściowych
-- Konfigurację API keys dla wyszukiwania
-- Limity API dla Google Search/SerpAPI
-- Połączenie internetowe 
+If you encounter issues with the automation, check:
+- Input data format correctness
+- Search API keys configuration
+- Google Search/SerpAPI limits
+- Internet connection 

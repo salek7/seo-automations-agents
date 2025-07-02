@@ -1,119 +1,119 @@
-# Klasteryzacja słów kluczowych - Google Colab
+# Keyword Clustering - Google Colab
 
-## Opis automatyzacji
+## Automation Description
 
-Automatyzacja do grupowania słów kluczowych na podstawie współwystępowania tych samych adresów URL w wynikach wyszukiwania Google. Słowa kluczowe, które prowadzą do podobnych stron, są grupowane w logiczne klastry.
+Automation for grouping keywords based on the co-occurrence of the same URLs in Google search results. Keywords that lead to similar pages are grouped into logical clusters.
 
-## Zasada działania
+## How It Works
 
-### Główna logika:
-1. **Pobieranie wyników wyszukiwania** - dla każdego słowa kluczowego pobierane są adresy URL z pierwszych pozycji Google
-2. **Analiza współwystępowania** - porównywanie URL-i między słowami kluczowymi
-3. **Klasteryzacja** - grupowanie słów kluczowych na podstawie wspólnych URL-i
-4. **Walidacja klastrów** - sprawdzenie jakości grupowania
+### Main logic:
+1. **Search Results Retrieval** - for each keyword, URLs are extracted from top Google positions
+2. **Co-occurrence Analysis** - comparing URLs between keywords
+3. **Clustering** - grouping keywords based on shared URLs
+4. **Cluster Validation** - checking grouping quality
 
-### Metoda klasteryzacji:
-- **Jaccard Similarity** - współczynnik podobieństwa bazujący na wspólnych URL-ach
-- **Threshold-based clustering** - grupowanie według progu podobieństwa
-- **Hierarchical clustering** - budowanie hierarchii klastrów
+### Clustering method:
+- **Jaccard Similarity** - similarity coefficient based on shared URLs
+- **Threshold-based clustering** - grouping by similarity threshold
+- **Hierarchical clustering** - building cluster hierarchy
 
-## Funkcjonalności
+## Features
 
-### Główne możliwości:
-- **Automatyczne pobieranie wyników** - scraping wyników Google dla każdego słowa kluczowego
-- **Analiza współwystępowania URL-i** - identyfikacja wspólnych domen i stron
-- **Inteligentna klasteryzacja** - grupowanie na podstawie podobieństwa wyników
-- **Wizualizacja klastrów** - wykresy i diagramy pokazujące relacje
-- **Eksport wyników** - zapisywanie klastrów w różnych formatach
+### Main capabilities:
+- **Automatic Results Retrieval** - scraping Google results for each keyword
+- **URL Co-occurrence Analysis** - identification of common domains and pages
+- **Intelligent Clustering** - grouping based on result similarity
+- **Cluster Visualization** - charts and diagrams showing relationships
+- **Results Export** - saving clusters in various formats
 
-### Dodatkowe funkcje:
-- **Analiza domen** - identyfikacja głównych domen w klastrach
-- **Filtrowanie wyników** - usuwanie nieistotnych URL-i
-- **Analiza konkurencji** - porównanie z konkurencyjnymi stronami
-- **Priorytetyzacja klastrów** - ranking według potencjału
+### Additional features:
+- **Domain Analysis** - identification of main domains in clusters
+- **Results Filtering** - removal of irrelevant URLs
+- **Competitive Analysis** - comparison with competitor pages
+- **Cluster Prioritization** - ranking by potential
 
-## Struktura automatyzacji
+## Automation Structure
 
-### Etapy przetwarzania:
-1. **Input Processing** - przygotowanie listy słów kluczowych
-2. **Search Results Scraping** - pobieranie wyników z Google
-3. **URL Extraction** - wyciąganie adresów URL z wyników
-4. **Similarity Analysis** - obliczanie podobieństwa między słowami kluczowymi
-5. **Clustering Algorithm** - algorytm grupowania
-6. **Cluster Validation** - walidacja i optymalizacja klastrów
-7. **Visualization** - generowanie wykresów
-8. **Export** - eksport wyników
+### Processing stages:
+1. **Input Processing** - preparing the keyword list
+2. **Search Results Scraping** - retrieving results from Google
+3. **URL Extraction** - extracting URLs from results
+4. **Similarity Analysis** - calculating similarity between keywords
+5. **Clustering Algorithm** - grouping algorithm
+6. **Cluster Validation** - validation and optimization of clusters
+7. **Visualization** - chart generation
+8. **Export** - results export
 
-### Integracje:
-- **Google Search API** - pobieranie wyników wyszukiwania
-- **Pandas** - przetwarzanie danych
-- **Scikit-learn** - algorytmy klasteryzacji
-- **Matplotlib/Plotly** - wizualizacje
-- **Google Sheets** - import/eksport danych
+### Integrations:
+- **Google Search API** - search results retrieval
+- **Pandas** - data processing
+- **Scikit-learn** - clustering algorithms
+- **Matplotlib/Plotly** - visualizations
+- **Google Sheets** - data import/export
 
-## Konfiguracja
+## Configuration
 
-### Wymagane API:
-- Google Search API (opcjonalnie)
-- SerpAPI lub podobne (alternatywa)
-- Google Sheets API (opcjonalnie)
+### Required APIs:
+- Google Search API (optional)
+- SerpAPI or similar (alternative)
+- Google Sheets API (optional)
 
-### Parametry wejściowe:
-- Lista słów kluczowych (CSV/Excel)
-- Liczba wyników do analizy (domyślnie 10)
-- Próg podobieństwa (0.1-1.0)
-- Minimalna wielkość klastra
-- Filtry domen (opcjonalnie)
+### Input parameters:
+- Keyword list (CSV/Excel)
+- Number of results to analyze (default: 10)
+- Similarity threshold (0.1-1.0)
+- Minimum cluster size
+- Domain filters (optional)
 
-## Wyniki
+## Results
 
-### Format wyjściowy:
-- **Klastry z nazwami** - pogrupowane słowa kluczowe z opisami
-- **Wspólne URL-e** - lista adresów URL występujących w klastrze
-- **Statystyki klastrów** - wielkość, gęstość, jakość
-- **Wizualizacje** - wykresy podobieństwa i hierarchii
-- **Raport analityczny** - szczegółowe podsumowanie
+### Output format:
+- **Named clusters** - grouped keywords with descriptions
+- **Shared URLs** - list of URLs occurring in the cluster
+- **Cluster statistics** - size, density, quality
+- **Visualizations** - similarity and hierarchy charts
+- **Analytical report** - detailed summary
 
-### Metryki:
-- **Jaccard Index** - współczynnik podobieństwa między słowami kluczowymi
-- **Cluster density** - gęstość URL-i w klastrze
-- **Domain diversity** - różnorodność domen w klastrze
-- **Search volume** - suma wolumenu wyszukiwań w klastrze
+### Metrics:
+- **Jaccard Index** - similarity coefficient between keywords
+- **Cluster density** - URL density in cluster
+- **Domain diversity** - domain diversity in cluster
+- **Search volume** - sum of search volumes in cluster
 
-## Zastosowania
+## Applications
 
 ### SEO:
-- **Content clustering** - organizacja treści według tematów
-- **Site structure optimization** - optymalizacja struktury strony
-- **Internal linking** - planowanie linkowania wewnętrznego
-- **Competitive analysis** - analiza konkurencji
+- **Content clustering** - content organization by topics
+- **Site structure optimization** - website structure optimization
+- **Internal linking** - internal linking planning
+- **Competitive analysis** - competitor analysis
 
 ### Content Marketing:
-- **Topic research** - badania tematyczne
-- **Content planning** - planowanie kalendarza treści
-- **Audience targeting** - segmentacja odbiorców
-- **Performance analysis** - analiza wydajności treści
+- **Topic research** - topic research
+- **Content planning** - content calendar planning
+- **Audience targeting** - audience segmentation
+- **Performance analysis** - content performance analysis
 
-## Instrukcja użycia
+## Usage Instructions
 
-1. **Przygotuj dane** - lista słów kluczowych w formacie CSV
-2. **Skonfiguruj parametry** - ustaw próg podobieństwa i liczbę wyników
-3. **Uruchom automatyzację** - wykonaj notebook w Google Colab
-4. **Przejrzyj klastry** - sprawdź jakość grupowania
-5. **Eksportuj wyniki** - zapisz do wybranej platformy
+1. **Prepare data** - keyword list in CSV format
+2. **Configure parameters** - set similarity threshold and number of results
+3. **Run automation** - execute notebook in Google Colab
+4. **Review clusters** - check grouping quality
+5. **Export results** - save to chosen platform
 
-## Wymagania techniczne
+## Technical Requirements
 
 - Google Colab account
-- Podstawowa znajomość Python
-- Dostęp do API wyszukiwania (opcjonalnie)
-- Wystarczające zasoby obliczeniowe
+- Basic Python knowledge
+- Access to search API (optional)
+- Sufficient computational resources
 
-## Wsparcie
+## Support
 
-W przypadku problemów sprawdź:
-- Poprawność formatu danych wejściowych
-- Konfigurację API (jeśli używane)
-- Limity API dla wyszukiwania
-- Połączenie internetowe
-- Zasoby Colab (RAM, GPU) 
+If you encounter issues, check:
+- Input data format correctness
+- API configuration (if used)
+- Search API limits
+- Internet connection
+- Colab resources (RAM, GPU) 

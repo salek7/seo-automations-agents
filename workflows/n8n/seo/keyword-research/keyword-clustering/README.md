@@ -1,102 +1,102 @@
-# Klasteryzacja słów kluczowych - N8N
+# Keyword Clustering - N8N
 
-## Opis automatyzacji
+## Automation Description
 
-Automatyzacja do grupowania słów kluczowych na podstawie współwystępowania tych samych adresów URL w wynikach wyszukiwania Google. Słowa kluczowe, które prowadzą do podobnych stron, są grupowane w logiczne klastry.
+Automation for grouping keywords based on the co-occurrence of the same URLs in Google search results. Keywords that lead to similar pages are grouped into logical clusters.
 
-## Funkcjonalności
+## Features
 
-### Główne możliwości:
-- **Pobieranie wyników wyszukiwania** - automatyczne pobieranie URL-i z Google dla każdego słowa kluczowego
-- **Analiza współwystępowania URL-i** - identyfikacja wspólnych domen i stron między słowami kluczowymi
-- **Klasteryzacja na podstawie URL-i** - grupowanie słów kluczowych według podobieństwa wyników
-- **Wizualizacja interaktywna** - dynamiczne wykresy i diagramy pokazujące relacje
-- **Eksport wieloformatowy** - CSV, Excel, JSON, PDF
+### Main capabilities:
+- **Search Results Retrieval** - automatic extraction of URLs from Google for each keyword
+- **URL Co-occurrence Analysis** - identification of common domains and pages between keywords
+- **URL-based Clustering** - grouping keywords based on result similarity
+- **Interactive Visualization** - dynamic charts and diagrams showing relationships
+- **Multi-format Export** - CSV, Excel, JSON, PDF
 
-### Zaawansowane funkcje:
-- **Analiza domen** - identyfikacja głównych domen w klastrach
-- **Filtrowanie wyników** - usuwanie nieistotnych URL-i
-- **Cluster optimization** - optymalizacja jakości grupowania
-- **Competitive analysis** - porównanie z konkurencyjnymi stronami
-- **Trend analysis** - analiza trendów w klastrach
+### Advanced features:
+- **Domain Analysis** - identification of main domains in clusters
+- **Results Filtering** - removal of irrelevant URLs
+- **Cluster optimization** - grouping quality optimization
+- **Competitive analysis** - comparison with competitor pages
+- **Trend analysis** - trend analysis in clusters
 
-## Architektura workflow
+## Workflow Architecture
 
-### Węzły N8N:
-1. **HTTP Request** - pobieranie wyników wyszukiwania z Google
-2. **Function** - wyciąganie URL-i z wyników wyszukiwania
-3. **Function** - algorytm klasteryzacji (Jaccard Similarity)
-4. **Google Sheets** - import/eksport danych
-5. **Chart.js** - generowanie wizualizacji
-6. **Email/Slack** - powiadomienia
-7. **Webhook** - trigger automatyzacji
+### N8N Nodes:
+1. **HTTP Request** - retrieving search results from Google
+2. **Function** - extracting URLs from search results
+3. **Function** - clustering algorithm (Jaccard Similarity)
+4. **Google Sheets** - data import/export
+5. **Chart.js** - visualization generation
+6. **Email/Slack** - notifications
+7. **Webhook** - automation trigger
 
-### Integracje:
-- **Google Search API/SerpAPI** - pobieranie wyników wyszukiwania
-- **Google Sheets** - zarządzanie danymi
-- **Airtable** - baza danych klastrów
-- **Slack/Teams** - komunikacja zespołu
-- **Google Analytics** - analiza wydajności
-- **Chart.js/D3.js** - wizualizacje
+### Integrations:
+- **Google Search API/SerpAPI** - search results retrieval
+- **Google Sheets** - data management
+- **Airtable** - cluster database
+- **Slack/Teams** - team communication
+- **Google Analytics** - performance analysis
+- **Chart.js/D3.js** - visualizations
 
-## Konfiguracja
+## Configuration
 
-### Wymagane API:
-- Google Search API lub SerpAPI (klucz)
+### Required APIs:
+- Google Search API or SerpAPI (key)
 - Google Sheets API
-- Airtable API (opcjonalnie)
-- Slack/Teams API (opcjonalnie)
+- Airtable API (optional)
+- Slack/Teams API (optional)
 
-### Parametry konfiguracyjne:
-- **Input data** - lista słów kluczowych
-- **Number of search results** - liczba wyników do analizy (domyślnie 10)
-- **Similarity threshold** - próg podobieństwa (0.1-1.0)
-- **Min cluster size** - minimalna wielkość klastra
-- **Domain filters** - filtry domen (opcjonalnie)
+### Configuration parameters:
+- **Input data** - keyword list
+- **Number of search results** - number of results to analyze (default: 10)
+- **Similarity threshold** - similarity threshold (0.1-1.0)
+- **Min cluster size** - minimum cluster size
+- **Domain filters** - domain filters (optional)
 
-## Wyniki i raporty
+## Results and Reports
 
-### Format wyjściowy:
-- **Structured clusters** - pogrupowane słowa kluczowe z nazwami
-- **Wspólne URL-e** - lista adresów URL występujących w klastrze
-- **Cluster metrics** - wielkość, gęstość, spójność
+### Output format:
+- **Structured clusters** - grouped keywords with names
+- **Shared URLs** - list of URLs occurring in the cluster
+- **Cluster metrics** - size, density, consistency
 - **Visualization files** - PNG, SVG, HTML
-- **Analytical report** - szczegółowa analiza
+- **Analytical report** - detailed analysis
 
-### Metryki wydajności:
-- **Jaccard Index** - współczynnik podobieństwa między słowami kluczowymi
-- **Cluster density** - gęstość URL-i w klastrze
-- **Domain diversity** - różnorodność domen w klastrze
-- **Search volume** - suma wolumenu wyszukiwań w klastrze
+### Performance metrics:
+- **Jaccard Index** - similarity coefficient between keywords
+- **Cluster density** - URL density in cluster
+- **Domain diversity** - domain diversity in cluster
+- **Search volume** - sum of search volumes in cluster
 
-## Zastosowania biznesowe
+## Business Applications
 
-### SEO i Marketing:
-- **Content planning** - planowanie treści według klastrów
-- **PPC campaigns** - organizacja kampanii reklamowych
-- **Site structure** - optymalizacja struktury strony
-- **Competitive analysis** - analiza konkurencji
+### SEO and Marketing:
+- **Content planning** - content planning by clusters
+- **PPC campaigns** - advertising campaign organization
+- **Site structure** - website structure optimization
+- **Competitive analysis** - competitor analysis
 
 ### Content Strategy:
-- **Topic clusters** - identyfikacja tematów głównych
-- **Content gaps** - wykrywanie luk tematycznych
-- **Audience targeting** - segmentacja odbiorców
-- **Performance tracking** - śledzenie wydajności
+- **Topic clusters** - main topic identification
+- **Content gaps** - topic gap detection
+- **Audience targeting** - audience segmentation
+- **Performance tracking** - performance monitoring
 
-## Instrukcja implementacji
+## Implementation Instructions
 
-### Krok 1: Przygotowanie danych
+### Step 1: Data Preparation
 ```javascript
-// Przykład struktury danych wejściowych
+// Example input data structure
 const keywords = [
-  { keyword: "najlepsze buty sportowe", volume: 1000 },
-  { keyword: "buty do biegania", volume: 800 },
+  { keyword: "best sports shoes", volume: 1000 },
+  { keyword: "running shoes", volume: 800 },
   // ...
 ];
 
-// Przykład wyników wyszukiwania
+// Example search results
 const searchResults = {
-  "najlepsze buty sportowe": [
+  "best sports shoes": [
     "https://example.com/best-sports-shoes",
     "https://competitor.com/sports-shoes",
     // ...
@@ -104,55 +104,55 @@ const searchResults = {
 };
 ```
 
-### Krok 2: Konfiguracja workflow
-1. Skonfiguruj węzeł HTTP Request dla pobierania wyników wyszukiwania
-2. Ustaw parametry API dla Google Search/SerpAPI
-3. Skonfiguruj algorytm klasteryzacji (Jaccard Similarity)
-4. Dodaj węzły eksportu i wizualizacji
+### Step 2: Workflow Configuration
+1. Configure HTTP Request node for retrieving search results
+2. Set API parameters for Google Search/SerpAPI
+3. Configure clustering algorithm (Jaccard Similarity)
+4. Add export and visualization nodes
 
-### Krok 3: Uruchomienie i monitoring
-1. Testuj na małym zbiorze danych
-2. Dostosuj parametry klasteryzacji
-3. Uruchom na pełnym zbiorze
-4. Monitoruj wyniki i optymalizuj
+### Step 3: Execution and Monitoring
+1. Test on small dataset
+2. Adjust clustering parameters
+3. Run on full dataset
+4. Monitor results and optimize
 
-## Optymalizacja wydajności
+## Performance Optimization
 
-### Najlepsze praktyki:
-- **Batch processing** - przetwarzanie wsadowe dużych zbiorów
-- **Caching** - cache'owanie wyników analizy semantycznej
-- **Parallel processing** - równoległe przetwarzanie klastrów
-- **Error handling** - obsługa błędów i retry logic
+### Best practices:
+- **Batch processing** - batch processing of large datasets
+- **Caching** - caching of search results
+- **Parallel processing** - parallel cluster processing
+- **Error handling** - error handling and retry logic
 
 ### Monitoring:
-- **API limits** - monitorowanie limitów Google Search/SerpAPI
-- **Processing time** - śledzenie czasu przetwarzania
-- **Quality metrics** - kontrola jakości klasteryzacji
-- **Resource usage** - wykorzystanie zasobów
+- **API limits** - monitoring Google Search/SerpAPI limits
+- **Processing time** - tracking processing time
+- **Quality metrics** - clustering quality control
+- **Resource usage** - resource utilization
 
-## Rozwiązywanie problemów
+## Troubleshooting
 
-### Częste problemy:
-- **Poor clustering quality** - dostosuj próg podobieństwa
-- **API rate limits** - zaimplementuj rate limiting dla wyszukiwania
-- **Memory issues** - przetwarzaj dane w batch'ach
-- **Inconsistent results** - sprawdź jakość danych wejściowych
+### Common issues:
+- **Poor clustering quality** - adjust similarity threshold
+- **API rate limits** - implement rate limiting for search
+- **Memory issues** - process data in batches
+- **Inconsistent results** - check input data quality
 
 ### Debugging:
-- **Log analysis** - analiza logów workflow
-- **Data validation** - walidacja danych wejściowych
-- **Step-by-step testing** - testowanie pojedynczych węzłów
-- **Performance profiling** - profilowanie wydajności
+- **Log analysis** - workflow log analysis
+- **Data validation** - input data validation
+- **Step-by-step testing** - single node testing
+- **Performance profiling** - performance profiling
 
-## Wymagania techniczne
+## Technical Requirements
 
-- N8N instance (self-hosted lub cloud)
-- Google Search API lub SerpAPI access
-- Podstawowa znajomość JavaScript
-- Dostęp do danych słów kluczowych
-- Wystarczające zasoby obliczeniowe
+- N8N instance (self-hosted or cloud)
+- Google Search API or SerpAPI access
+- Basic JavaScript knowledge
+- Access to keyword data
+- Sufficient computational resources
 
-## Wsparcie i dokumentacja
+## Support and Documentation
 
 - N8N documentation
 - Google Search API documentation
