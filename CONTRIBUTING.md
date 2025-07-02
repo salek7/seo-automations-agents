@@ -1,13 +1,13 @@
-# 🤝 Współtworzenie
+# 🤝 Contributing
 
-Dziękujemy za zainteresowanie współtworzeniem Nodes Hub Automations! Ten plik zawiera wszystkie informacje potrzebne do dodania Twojej automatyzacji do repozytorium.
+Thank you for your interest in contributing to Nodes Hub Automations! This file contains all the information needed to add your automation to the repository.
 
-## 📋 Jak dodać swoją automatyzację?
+## 📋 How to add your automation?
 
-### 1. Przygotowanie automatyzacji
+### 1. Preparing the automation
 
-#### Struktura plików
-Każda automatyzacja powinna mieć następującą strukturę:
+#### File structure
+Each automation should have the following structure:
 
 ```
 workflows/
@@ -27,17 +27,17 @@ workflows/
                 └── metadata.json      # Metadane (opcjonalnie)
 ```
 
-#### Kategorie SEO
-- `keyword-research` - Badania słów kluczowych
-- `competitor-analysis` - Analiza konkurencji
-- `content-optimization` - Optymalizacja treści
-- `technical-seo` - Techniczne SEO
+#### SEO Categories
+- `keyword-research` - Keyword research
+- `competitor-analysis` - Competitor analysis
+- `content-optimization` - Content optimization
+- `technical-seo` - Technical SEO
 
-### 2. Wymagania dla README.md
+### 2. Requirements for README.md
 
-Każda automatyzacja musi mieć plik `README.md` z następującymi sekcjami:
+Each automation must have a `README.md` file with the following sections:
 
-#### Obowiązkowe sekcje:
+#### Required sections:
 ```markdown
 # 🎯 Nazwa automatyzacji
 
@@ -69,112 +69,112 @@ Instrukcje użycia
 Lista korzyści z używania automatyzacji
 ```
 
-#### Opcjonalne sekcje:
-- `Przykłady` - Przykłady użycia
-- `Troubleshooting` - Rozwiązywanie problemów
-- `Limitations` - Ograniczenia
+#### Optional sections:
+- `Examples` - Usage examples
+- `Troubleshooting` - Problem solving
+- `Limitations` - Limitations
 
-### 3. Nazewnictwo
+### 3. Naming
 
-#### Nazwy katalogów:
-- Używaj `kebab-case` (np. `keyword-research`)
-- Unikaj spacji i znaków specjalnych
-- Używaj opisowych nazw
+#### Directory names:
+- Use `kebab-case` (e.g., `keyword-research`)
+- Avoid spaces and special characters
+- Use descriptive names
 
-#### Nazwy plików:
-- `README.md` - opis automatyzacji
-- `scenario.json` - plik Make
-- `workflow.json` - plik N8N
-- `metadata.json` - metadane (opcjonalnie)
+#### File names:
+- `README.md` - automation description
+- `scenario.json` - Make file
+- `workflow.json` - N8N file
+- `metadata.json` - metadata (optional)
 
-### 4. Jakość kodu
+### 4. Code Quality
 
-#### Wymagania:
-- **Dokumentacja**: Każda automatyzacja musi być dobrze udokumentowana
-- **Czytelność**: Kod powinien być czytelny i zrozumiały
-- **Błędy**: Automatyzacja nie powinna zawierać błędów
-- **Bezpieczeństwo**: Nie umieszczaj kluczy API w kodzie
+#### Requirements:
+- **Documentation**: Each automation must be well documented
+- **Readability**: Code should be readable and understandable
+- **Errors**: Automation should not contain errors
+- **Security**: Do not place API keys in code
 
-#### Dobre praktyki:
-- Dodaj komentarze w kodzie
-- Używaj opisowych nazw zmiennych
-- Testuj automatyzację przed dodaniem
-- Sprawdź czy wszystkie API są dostępne
+#### Best practices:
+- Add comments in code
+- Use descriptive variable names
+- Test automation before adding
+- Check if all APIs are available
 
-### 5. Proces dodawania
+### 5. Adding process
 
-#### Krok 1: Fork repozytorium
-1. Przejdź do [repozytorium](https://github.com/salek7/nodes_hub_automations)
-2. Kliknij "Fork" w prawym górnym rogu
-3. Sklonuj swoje forkowane repozytorium
+#### Step 1: Fork the repository
+1. Go to the [repository](https://github.com/salek7/nodes_hub_automations)
+2. Click "Fork" in the top right corner
+3. Clone your forked repository
 
-#### Krok 2: Dodaj automatyzację
-1. Utwórz nową gałąź: `git checkout -b feature/dodaj-automatyzacje`
-2. Dodaj pliki automatyzacji w odpowiedniej strukturze
-3. Zaktualizuj główny `README.md` (dodaj do tabeli)
-4. Sprawdź czy wszystko działa
+#### Step 2: Add automation
+1. Create a new branch: `git checkout -b feature/add-automation`
+2. Add automation files in the appropriate structure
+3. Update the main `README.md` (add to table)
+4. Check if everything works
 
-#### Krok 3: Testowanie
-1. Przetestuj automatyzację w Make/N8N
-2. Sprawdź czy README jest kompletne
-3. Upewnij się, że nie ma błędów
+#### Step 3: Testing
+1. Test the automation in Make/N8N
+2. Check if README is complete
+3. Make sure there are no errors
 
-#### Krok 4: Pull Request
-1. Zatwierdź zmiany: `git commit -m "Dodano: [nazwa automatyzacji]"`
-2. Wypchnij zmiany: `git push origin feature/dodaj-automatyzacje`
-3. Utwórz Pull Request na GitHub
-4. Opisz co zostało dodane w opisie PR
+#### Step 4: Pull Request
+1. Commit changes: `git commit -m "Added: [automation name]"`
+2. Push changes: `git push origin feature/add-automation`
+3. Create Pull Request on GitHub
+4. Describe what was added in the PR description
 
-### 6. Szablon Pull Request
+### 6. Pull Request Template
 
 ```markdown
-## 🎯 Co zostało dodane?
-Krótki opis automatyzacji
+## 🎯 What was added?
+Brief description of automation
 
-## 📁 Pliki dodane
-- `workflows/make/seo/[kategoria]/[nazwa]/README.md`
-- `workflows/n8n/seo/[kategoria]/[nazwa]/README.md`
-- `workflows/make/seo/[kategoria]/[nazwa]/scenario.json` (opcjonalnie)
-- `workflows/n8n/seo/[kategoria]/[nazwa]/workflow.json` (opcjonalnie)
+## 📁 Files added
+- `workflows/make/seo/[category]/[name]/README.md`
+- `workflows/n8n/seo/[category]/[name]/README.md`
+- `workflows/make/seo/[category]/[name]/scenario.json` (optional)
+- `workflows/n8n/seo/[category]/[name]/workflow.json` (optional)
 
-## ✅ Co zostało sprawdzone?
-- [ ] Automatyzacja działa w Make/N8N
-- [ ] README jest kompletne
-- [ ] Nie ma błędów w kodzie
-- [ ] Główny README został zaktualizowany
-- [ ] Nie ma kluczy API w kodzie
+## ✅ What was checked?
+- [ ] Automation works in Make/N8N
+- [ ] README is complete
+- [ ] No errors in code
+- [ ] Main README was updated
+- [ ] No API keys in code
 
-## 🧪 Jak przetestować?
-Instrukcje testowania automatyzacji
+## 🧪 How to test?
+Instructions for testing automation
 ```
 
-### 7. Zasady
+### 7. Rules
 
-#### Dozwolone:
-- ✅ Automatyzacje SEO dla Make i N8N
-- ✅ Darmowe API i narzędzia
-- ✅ Dobrze udokumentowane automatyzacje
-- ✅ Przydatne dla społeczności SEO
+#### Allowed:
+- ✅ SEO automations for Make and N8N
+- ✅ Free APIs and tools
+- ✅ Well-documented automations
+- ✅ Useful for SEO community
 
-#### Niedozwolone:
-- ❌ Automatyzacje z płatnymi API (bez darmowych alternatyw)
-- ❌ Automatyzacje niezwiązane z SEO
-- ❌ Kod z błędami lub bez dokumentacji
-- ❌ Klucze API w kodzie
-- ❌ Automatyzacje naruszające prawa autorskie
+#### Not allowed:
+- ❌ Automations with paid APIs (without free alternatives)
+- ❌ Automations unrelated to SEO
+- ❌ Code with errors or without documentation
+- ❌ API keys in code
+- ❌ Automations violating copyright
 
-### 8. Wsparcie
+### 8. Support
 
-#### Potrzebujesz pomocy?
-- Otwórz [Issue](https://github.com/salek7/nodes_hub_automations/issues)
-- Sprawdź istniejące automatyzacje jako przykład
-- Skontaktuj się z maintainerami
+#### Need help?
+- Open an [Issue](https://github.com/salek7/nodes_hub_automations/issues)
+- Check existing automations as examples
+- Contact maintainers
 
-#### Przydatne linki:
+#### Useful links:
 - [Make Documentation](https://www.make.com/en/help)
 - [N8N Documentation](https://docs.n8n.io/)
 - [GitHub Guides](https://guides.github.com/)
 
 ---
 
-**Dziękujemy za współtworzenie! 🚀** 
+**Thank you for contributing! 🚀** 

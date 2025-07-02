@@ -1,29 +1,29 @@
-# 🎯 Nazwa automatyzacji
+# 🎯 Automation Name
 
-## Opis automatyzacji
-Krótki opis tego, co robi automatyzacja (2-3 zdania).
+## Automation Description
+Brief description of what the automation does (2-3 sentences).
 
-## Jak działa?
-1. **Krok 1** - opis pierwszego kroku
-2. **Krok 2** - opis drugiego kroku
-3. **Krok 3** - opis trzeciego kroku
-4. **Krok 4** - opis czwartego kroku
+## How it works?
+1. **Step 1** - description of first step
+2. **Step 2** - description of second step
+3. **Step 3** - description of third step
+4. **Step 4** - description of fourth step
 
-## Wymagania
+## Requirements
 
-### API i narzędzia
-- [SerpData.io](https://serpdata.io/) API do wyszukiwania
-- Google Sheets API do zarządzania danymi
-- OpenAI API do analizy i generowania treści
-- Web Scraping API do pobierania treści
-- [Inne wymagane API]
+### APIs and Tools
+- [SerpData.io](https://serpdata.io/) API for search
+- Google Sheets API for data management
+- OpenAI API for analysis and content generation
+- Web Scraping API for content retrieval
+- [Other required APIs]
 
-### Struktura danych wejściowych
-Google Sheets powinien zawierać kolumny:
-- `keyword` - słowo kluczowe do analizy
-- `domain` - domena do analizy
-- `language` - język wyszukiwania
-- `country` - kraj wyszukiwania
+### Input Data Structure
+Google Sheets should contain columns:
+- `keyword` - keyword to analyze
+- `domain` - domain to analyze
+- `language` - search language
+- `country` - search country
 
 ## Konfiguracja
 

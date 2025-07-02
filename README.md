@@ -1,125 +1,125 @@
 # 🚀 Nodes Hub Automations
 
-**Darmowe automatyzacje SEO dla Make i N8N**
+**Free SEO Automations for Make and N8N**
 
-Kolekcja gotowych do użycia automatyzacji SEO, które pomogą Ci zoptymalizować procesy marketingowe i analityczne. Wszystkie automatyzacje są darmowe i gotowe do importu w Make (Integromat) i N8N.
+A collection of ready-to-use SEO automations that will help you optimize marketing and analytical processes. All automations are free and ready to import in Make (Integromat) and N8N.
 
-## 🎯 Co znajdziesz w tym repozytorium?
+## 🎯 What you'll find in this repository?
 
-### 📊 Automatyzacje SEO
+### 📊 SEO Automations
 
-| Nazwa | Kategoria | Make | N8N | Opis |
-|-------|-----------|------|-----|------|
-| [Generator struktury nagłówków](workflows/make/seo/content-optimization/header-structure-generator/) | Content Optimization | ✅ | [✅](workflows/n8n/seo/content-optimization/header-structure-generator/) | Generuje strukturę nagłówków na podstawie analizy konkurencji |
-| [Generator Query Expansion & Fan-out](workflows/make/seo/keyword-research/query-expansion-generator/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/query-expansion-generator/) | Generuje syntetyczne zapytania zgodnie z patentami Google |
-| [Kompleksowe badania słów kluczowych](workflows/make/seo/keyword-research/comprehensive-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/comprehensive-keyword-research/) | Pełne badania z 7 typami danych w strukturalnych arkuszach |
-| [Klasyfikacja intencji słów kluczowych](workflows/make/seo/keyword-research/intent-classification/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/intent-classification/) | Klasyfikuje słowa kluczowe według intencji użytkownika |
-| [Monitor AI Overviews](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/ai-overviews-monitor/) | Śledzi obecność w AI Overviews Google |
-| [Szybkie badania słów kluczowych](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/rapid-keyword-research/) | Zastępuje godziny pracy sekundami automatyzacji |
-| [Analizator Self-Saturation](workflows/make/seo/technical-seo/self-saturation-analyzer/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/self-saturation-analyzer/) | Ocenia szanse na organiczne wyniki vs self-saturation |
-| [Deep Research Agent](workflows/make/seo/keyword-research/deep-research-agent/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/deep-research-agent/) | Agent wieloetapowych badań jak ChatGPT Deep Research |
+| Name | Category | Make | N8N | Description |
+|------|----------|------|-----|-------------|
+| [Header Structure Generator](workflows/make/seo/content-optimization/header-structure-generator/) | Content Optimization | ✅ | [✅](workflows/n8n/seo/content-optimization/header-structure-generator/) | Generates header structure based on competitor analysis |
+| [Query Expansion & Fan-out Generator](workflows/make/seo/keyword-research/query-expansion-generator/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/query-expansion-generator/) | Generates synthetic queries according to Google patents |
+| [Comprehensive Keyword Research](workflows/make/seo/keyword-research/comprehensive-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/comprehensive-keyword-research/) | Complete research with 7 data types in structured sheets |
+| [Keyword Intent Classification](workflows/make/seo/keyword-research/intent-classification/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/intent-classification/) | Classifies keywords by user intent |
+| [AI Overviews Monitor](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/ai-overviews-monitor/) | Tracks presence in Google AI Overviews |
+| [Rapid Keyword Research](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/rapid-keyword-research/) | Replaces hours of work with seconds of automation |
+| [Self-Saturation Analyzer](workflows/make/seo/technical-seo/self-saturation-analyzer/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/self-saturation-analyzer/) | Evaluates chances for organic results vs self-saturation |
+| [Deep Research Agent](workflows/make/seo/keyword-research/deep-research-agent/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/deep-research-agent/) | Multi-step research agent like ChatGPT Deep Research |
 
-### 🛠️ Narzędzia
-- **Make (Integromat)** - gotowe scenariusze do importu
-- **N8N** - workflow'y do skopiowania
+### 🛠️ Tools
+- **Make (Integromat)** - ready-to-import scenarios
+- **N8N** - workflows to copy
 
-### 🤖 Integracja z AI Asystentami (MCP)
+### 🤖 AI Assistant Integration (MCP)
 
-Wszystkie automatyzacje można wykorzystać z AI asystentami poprzez MCP (Model Context Protocol) serwery:
+All automations can be used with AI assistants through MCP (Model Context Protocol) servers:
 
 #### Make MCP Server
-- **Oficjalny MCP Server** od Make: [developers.make.com/mcp-server](https://developers.make.com/mcp-server)
-- **Funkcje**: Uruchamianie scenariuszy "On Demand" jako narzędzi dla AI
-- **Korzyści**: 
-  - Scenariusze jako callable tools dla AI
-  - Dwukierunkowa komunikacja między AI a automatyzacjami
-  - Dostępne na wszystkich planach (w tym darmowym)
+- **Official MCP Server** from Make: [developers.make.com/mcp-server](https://developers.make.com/mcp-server)
+- **Features**: Running "On Demand" scenarios as tools for AI
+- **Benefits**: 
+  - Scenarios as callable tools for AI
+  - Bidirectional communication between AI and automations
+  - Available on all plans (including free)
 
 #### N8N MCP Servers
-- **[mcp-n8n-builder](https://github.com/spences10/mcp-n8n-builder)** - Programatyczne tworzenie i zarządzanie workflow'ami
-- **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp)** - Alternatywny MCP server dla N8N
-- **Funkcje**: 
-  - Tworzenie, modyfikacja i zarządzanie workflow'ami
-  - Walidacja schematów i typów node'ów
-  - Inteligentne sugestie dla podobnych typów node'ów
-  - Zarządzanie wykonaniami workflow'ów
+- **[mcp-n8n-builder](https://github.com/spences10/mcp-n8n-builder)** - Programmatic creation and management of workflows
+- **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp)** - Alternative MCP server for N8N
+- **Features**: 
+  - Create, modify and manage workflows
+  - Schema and node type validation
+  - Smart suggestions for similar node types
+  - Workflow execution management
 
-**Przykład użycia**: AI asystent może automatycznie modyfikować automatyzacje SEO na podstawie Twoich wymagań, dodając nowe funkcjonalności lub dostosowując istniejące workflow'y.
+**Usage example**: AI assistant can automatically modify SEO automations based on your requirements, adding new features or adapting existing workflows.
 
-## 📁 Struktura repozytorium
+## 📁 Repository Structure
 
 ```
 workflows/
-├── make/           # Automatyzacje dla Make
-│   └── seo/        # Kategoria SEO
+├── make/           # Make automations
+│   └── seo/        # SEO category
 │       ├── keyword-research/
 │       ├── competitor-analysis/
 │       ├── content-optimization/
 │       └── technical-seo/
-└── n8n/            # Automatyzacje dla N8N
-    └── seo/        # Kategoria SEO
+└── n8n/            # N8N automations
+    └── seo/        # SEO category
         ├── keyword-research/
         ├── competitor-analysis/
         ├── content-optimization/
         └── technical-seo/
 ```
 
-## 🚀 Szybki start
+## 🚀 Quick Start
 
-### Dla Make (Integromat)
-1. Przejdź do katalogu `workflows/make/seo/`
-2. Wybierz interesującą Cię automatyzację
-3. Pobierz plik JSON
-4. Zaimportuj w Make: **Settings → Import → Upload JSON**
+### For Make (Integromat)
+1. Go to the `workflows/make/seo/` directory
+2. Choose the automation you're interested in
+3. Download the JSON file
+4. Import in Make: **Settings → Import → Upload JSON**
 
-### Dla N8N
-1. Przejdź do katalogu `workflows/n8n/seo/`
-2. Wybierz interesujący Cię workflow
-3. Skopiuj zawartość JSON
-4. Wklej w N8N: **Import from JSON**
+### For N8N
+1. Go to the `workflows/n8n/seo/` directory
+2. Choose the workflow you're interested in
+3. Copy the JSON content
+4. Paste in N8N: **Import from JSON**
 
-## 📚 Dokumentacja
+## 📚 Documentation
 
-- [📖 Instrukcje instalacji](docs/installation-guides/)
-- [📋 Instrukcje użycia](docs/usage-guides/)
-- [💡 Przykłady](docs/examples/)
+- [📖 Installation guides](docs/installation-guides/)
+- [📋 Usage guides](docs/usage-guides/)
+- [💡 Examples](docs/examples/)
 
-## 🤝 Współtworzenie
+## 🤝 Contributing
 
-Chcesz dodać swoją automatyzację SEO? Dołącz do społeczności!
+Want to add your SEO automation? Join the community!
 
-### 🚀 Jak dodać swoją automatyzację?
-1. **Sprawdź** [CONTRIBUTING.md](CONTRIBUTING.md) - szczegółowe instrukcje
-2. **Użyj** [szablonu README](docs/README_TEMPLATE.md) dla nowych automatyzacji
-3. **Fork** repozytorium i utwórz Pull Request
-4. **Przetestuj** automatyzację przed dodaniem
+### 🚀 How to add your automation?
+1. **Check** [CONTRIBUTING.md](CONTRIBUTING.md) - detailed instructions
+2. **Use** [README template](docs/README_TEMPLATE.md) for new automations
+3. **Fork** the repository and create a Pull Request
+4. **Test** the automation before adding
 
-### 📋 Wymagania dla nowych automatyzacji:
-- ✅ Automatyzacja SEO dla Make lub N8N
-- ✅ Darmowe API i narzędzia
-- ✅ Kompletna dokumentacja
-- ✅ Przetestowana funkcjonalność
-- ✅ Brak kluczy API w kodzie
+### 📋 Requirements for new automations:
+- ✅ SEO automation for Make or N8N
+- ✅ Free APIs and tools
+- ✅ Complete documentation
+- ✅ Tested functionality
+- ✅ No API keys in code
 
-### 🎯 Kategorie SEO:
-- **Keyword Research** - badania słów kluczowych
-- **Competitor Analysis** - analiza konkurencji  
-- **Content Optimization** - optymalizacja treści
-- **Technical SEO** - techniczne SEO
+### 🎯 SEO Categories:
+- **Keyword Research** - keyword research
+- **Competitor Analysis** - competitor analysis
+- **Content Optimization** - content optimization
+- **Technical SEO** - technical SEO
 
-### 📞 Wsparcie:
-- [Issues](https://github.com/salek7/nodes_hub_automations/issues) - zgłaszanie problemów
-- [Discussions](https://github.com/salek7/nodes_hub_automations/discussions) - dyskusje
-- [Code of Conduct](CODE_OF_CONDUCT.md) - zasady społeczności
+### 📞 Support:
+- [Issues](https://github.com/salek7/nodes_hub_automations/issues) - report problems
+- [Discussions](https://github.com/salek7/nodes_hub_automations/discussions) - discussions
+- [Code of Conduct](CODE_OF_CONDUCT.md) - community guidelines
 
-## 📝 Licencja
+## 📝 License
 
-Wszystkie automatyzacje są dostępne na licencji MIT - możesz je używać komercyjnie i modyfikować według potrzeb.
+All automations are available under the MIT license - you can use them commercially and modify as needed.
 
-## ⭐ Wsparcie
+## ⭐ Support
 
-Jeśli projekt Ci się podoba, daj gwiazdkę! ⭐
+If you like the project, give it a star! ⭐
 
 ---
 
-**Tworzone z ❤️ dla społeczności SEO** 
+**Built with ❤️ for the SEO community** 

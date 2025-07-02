@@ -1,26 +1,26 @@
-# 📜 Kodeks Postępowania
+# 📜 Code of Conduct
 
-## Nasza Obietnica
+## Our Promise
 
-W celu promowania otwartego i przyjaznego środowiska, my jako współtwórcy i maintainerzy zobowiązujemy się do udziału w naszym projekcie i społeczności, zapewniając każdemu bez względu na wiek, rozmiar ciała, niepełnosprawność, pochodzenie etniczne, cechy płciowe, tożsamość i ekspresję płciową, poziom doświadczenia, wykształcenie, status społeczno-ekonomiczny, narodowość, wygląd osobisty, rasę, religię lub orientację seksualną i tożsamość, wolne od nękania.
+In order to promote an open and friendly environment, we as contributors and maintainers commit to participating in our project and community, ensuring everyone regardless of age, body size, disability, ethnicity, gender characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual orientation and identity, free from harassment.
 
-## Nasze Standardy
+## Our Standards
 
-Przykłady zachowań, które przyczyniają się do tworzenia pozytywnego środowiska:
+Examples of behavior that contributes to creating a positive environment:
 
-* Używanie przyjaznego i inkluzywnego języka
-* Szanowanie różnych punktów widzenia i doświadczeń
-* Łaskawie przyjmowanie konstruktywnej krytyki
-* Skupianie się na tym, co jest najlepsze dla społeczności
-* Wykazywanie empatii wobec innych członków społeczności
+* Using friendly and inclusive language
+* Respecting different viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
 
-Przykłady niedopuszczalnego zachowania:
+Examples of unacceptable behavior:
 
-* Używanie seksualizowanego języka lub obrazów i niepożądane uwagi lub zaloty
-* Trollowanie, obraźliwe/poniżające komentarze oraz osobiste lub polityczne ataki
-* Nękanie publiczne lub prywatne
-* Publikowanie prywatnych informacji innych osób, takich jak fizyczne lub elektroniczne adresy, bez wyraźnej zgody
-* Inne zachowania, które mogłyby być uznane za nieodpowiednie w środowisku zawodowym
+* Using sexualized language or images and unwanted attention or advances
+* Trolling, offensive/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as physical or electronic addresses, without explicit permission
+* Other behavior that could reasonably be considered inappropriate in a professional setting
 
 ## Nasze Obowiązki
 

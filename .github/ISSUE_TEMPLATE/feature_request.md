@@ -1,31 +1,31 @@
 ---
-name: 💡 Propozycja nowej funkcji
-about: Zaproponuj pomysł dla tego projektu
+name: 💡 Feature Request
+about: Suggest an idea for this project
 title: '[FEATURE] '
 labels: ['enhancement']
 assignees: ''
 ---
 
-## 💡 Czy Twoja propozycja jest związana z problemem?
-Krótki opis problemu. Np. Zawsze irytuje mnie, gdy...
+## 💡 Is your feature request related to a problem?
+Brief description of the problem. E.g. I'm always frustrated when...
 
-## 💭 Opisz rozwiązanie, które chciałbyś zobaczyć
-Jasny i zwięzły opis tego, co chciałbyś, żeby się wydarzyło.
+## 💭 Describe the solution you'd like to see
+Clear and concise description of what you'd like to happen.
 
-## 🔄 Opisz alternatywy, które rozważyłeś
-Jasny i zwięzły opis wszelkich alternatywnych rozwiązań lub funkcji, które rozważyłeś.
+## 🔄 Describe alternatives you've considered
+Clear and concise description of any alternative solutions or features you've considered.
 
-## 📝 Dodatkowy kontekst
-Dodaj tutaj wszelkie inne informacje lub zrzuty ekranu dotyczące propozycji funkcji.
+## 📝 Additional Context
+Add any other information or screenshots about the feature request here.
 
-## 🎯 Kategoria SEO
+## 🎯 SEO Category
 - [ ] Keyword Research
 - [ ] Competitor Analysis
 - [ ] Content Optimization
 - [ ] Technical SEO
-- [ ] Inne
+- [ ] Other
 
-## 🛠️ Platforma
+## 🛠️ Platform
 - [ ] Make (Integromat)
 - [ ] N8N
-- [ ] Obie platformy 
+- [ ] Both platforms 

@@ -1,18 +1,18 @@
 # 🤖 Deep Research Agent
 
-## Opis automatyzacji
+## Automation Description
 
-Automatyzacja działa jak agent Deep Research ChatGPT - samodzielnie przeprowadza wieloetapowe badania w internecie dla złożonych zadań. Wykonuje w dziesiątki minut to, co człowiekowi zajęłoby wiele godzin. Idealna dla intensywnej pracy wiedzowej w dziedzinach jak finanse, nauka, polityka i inżynieria.
+The automation works like a ChatGPT Deep Research agent - it independently conducts multi-step research on the internet for complex tasks. It accomplishes in tens of minutes what would take a human many hours. Ideal for intensive knowledge work in areas like finance, science, policy, and engineering.
 
-## Jak działa?
+## How it works?
 
-1. **Pobiera zapytanie badawcze** z Google Sheets
-2. **Samodzielnie planuje strategię** badań wieloetapowych
-3. **Przeprowadza iteracyjne wyszukiwania** w internecie
-4. **Analizuje setki źródeł** online (teksty, obrazy, PDF-y)
-5. **Syntetyzuje wiedzę** z różnych źródeł
-6. **Generuje kompleksowy raport** na poziomie analityka badawczego
-7. **Dokumentuje wszystkie źródła** z cytatami i podsumowaniem rozumowania
+1. **Retrieves research query** from Google Sheets
+2. **Independently plans strategy** for multi-step research
+3. **Conducts iterative searches** on the internet
+4. **Analyzes hundreds of sources** online (texts, images, PDFs)
+5. **Synthesizes knowledge** from various sources
+6. **Generates comprehensive report** at research analyst level
+7. **Documents all sources** with citations and reasoning summary
 
 ## Co to jest Deep Research?
 
