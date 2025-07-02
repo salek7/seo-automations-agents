@@ -1,149 +1,149 @@
 # 🤖 Deep Research Agent (N8N)
 
-## Opis automatyzacji
+## Automation Description
 
-Workflow N8N działa jak agent Deep Research ChatGPT - samodzielnie przeprowadza wieloetapowe badania w internecie dla złożonych zadań. Wykonuje w dziesiątki minut to, co człowiekowi zajęłoby wiele godzin. Idealny dla intensywnej pracy wiedzowej w dziedzinach jak finanse, nauka, polityka i inżynieria.
+The N8N workflow works like a ChatGPT Deep Research agent - it independently conducts multi-step research on the internet for complex tasks. It accomplishes in tens of minutes what would take a human many hours. Ideal for intensive knowledge work in areas like finance, science, policy, and engineering.
 
-## Jak działa?
+## How it works?
 
-1. **Pobiera zapytanie badawcze** z Google Sheets
-2. **Samodzielnie planuje strategię** badań wieloetapowych
-3. **Przeprowadza iteracyjne wyszukiwania** w internecie
-4. **Analizuje setki źródeł** online (teksty, obrazy, PDF-y)
-5. **Syntetyzuje wiedzę** z różnych źródeł
-6. **Generuje kompleksowy raport** na poziomie analityka badawczego
-7. **Dokumentuje wszystkie źródła** z cytatami i podsumowaniem rozumowania
+1. **Retrieves research query** from Google Sheets
+2. **Independently plans strategy** for multi-step research
+3. **Conducts iterative searches** on the internet
+4. **Analyzes hundreds of sources** online (texts, images, PDFs)
+5. **Synthesizes knowledge** from various sources
+6. **Generates comprehensive report** at research analyst level
+7. **Documents all sources** with citations and reasoning summary
 
-## Co to jest Deep Research?
+## What is Deep Research?
 
-Deep Research to zaawansowany agent, który:
-- **Samodzielnie odkrywa** informacje w internecie
-- **Rozumuje** o znalezionych danych
-- **Konsoliduje insights** z różnych źródeł
-- **Tworzy nową wiedzę** poprzez syntezę informacji
-- **Dokumentuje proces** z cytatami i uzasadnieniem
+Deep Research is an advanced agent that:
+- **Independently discovers** information on the internet
+- **Reasons** about found data
+- **Consolidates insights** from various sources
+- **Creates new knowledge** through information synthesis
+- **Documents the process** with citations and reasoning
 
-## Wymagania
+## Requirements
 
-### API i narzędzia
+### APIs and Tools
 - Google Sheets node
 - HTTP Request node ([SerpData.io](https://serpdata.io/) API)
 - HTTP Request node (Web Scraping API)
-- HTTP Request node (OpenAI API - GPT-4o lub o3)
+- HTTP Request node (OpenAI API - GPT-4o or o3)
 - HTTP Request node (PDF Processing API)
 - HTTP Request node (Image Analysis API)
-- Google Sheets node (zapis wyników)
+- Google Sheets node (results saving)
 
-### Struktura danych wejściowych
-Google Sheets powinien zawierać kolumny:
-- `research_query` - zapytanie badawcze
-- `research_depth` - głębokość badań (1-5)
-- `domain` - dziedzina (finanse, nauka, polityka, etc.)
-- `output_format` - format raportu (PDF, Google Docs, etc.)
+### Input Data Structure
+Google Sheets should contain columns:
+- `research_query` - research query
+- `research_depth` - research depth (1-5)
+- `domain` - domain (finance, science, policy, etc.)
+- `output_format` - report format (PDF, Google Docs, etc.)
 
-## Proces Deep Research
+## Deep Research Process
 
-### Faza 1: Planowanie strategii
-1. **Analiza zapytania** i określenie celów
-2. **Planowanie kroków** badawczych
-3. **Identyfikacja kluczowych źródeł** do sprawdzenia
-4. **Ustalenie kryteriów** oceny informacji
+### Phase 1: Strategy Planning
+1. **Query analysis** and goal setting
+2. **Planning research steps**
+3. **Identifying key sources** to check
+4. **Establishing criteria** for information evaluation
 
-### Faza 2: Iteracyjne wyszukiwanie
-1. **Początkowe wyszukiwania** w Google
-2. **Analiza pierwszych wyników** i identyfikacja luk
-3. **Dodatkowe wyszukiwania** na podstawie znalezionych informacji
-4. **Weryfikacja** i cross-reference informacji
+### Phase 2: Iterative Search
+1. **Initial searches** in Google
+2. **Analysis of first results** and gap identification
+3. **Additional searches** based on found information
+4. **Verification** and cross-reference of information
 
-### Faza 3: Analiza i synteza
-1. **Przetwarzanie setek źródeł** (teksty, obrazy, PDF-y)
-2. **Analiza semantyczna** i ekstrakcja kluczowych insights
-3. **Synteza wiedzy** z różnych perspektyw
-4. **Tworzenie nowych insights** poprzez połączenie informacji
+### Phase 3: Analysis and Synthesis
+1. **Processing hundreds of sources** (texts, images, PDFs)
+2. **Semantic analysis** and extraction of key insights
+3. **Knowledge synthesis** from various perspectives
+4. **Creating new insights** through information combination
 
-### Faza 4: Generowanie raportu
-1. **Strukturyzacja** znalezionych informacji
-2. **Tworzenie kompleksowego raportu** z cytatami
-3. **Dokumentowanie procesu** rozumowania
-4. **Weryfikacja** i walidacja wniosków
+### Phase 4: Report Generation
+1. **Structuring** found information
+2. **Creating comprehensive report** with citations
+3. **Documenting the reasoning process**
+4. **Verification** and validation of conclusions
 
-## Konfiguracja
+## Configuration
 
-1. **Przygotuj zapytania badawcze** w Google Sheets
-2. **Skonfiguruj połączenia** (SerpData.io, OpenAI, Web Scraping)
-3. **Ustaw parametry badań** (głębokość, dziedzina)
-4. **Skonfiguruj trigger** (ręczny lub czasowy)
+1. **Prepare research queries** in Google Sheets
+2. **Configure connections** (SerpData.io, OpenAI, Web Scraping)
+3. **Set research parameters** (depth, domain)
+4. **Configure trigger** (manual or scheduled)
 
-## Wyniki
+## Results
 
-Workflow generuje:
-- **Kompleksowy raport badawczy** na poziomie analityka
-- **Pełną dokumentację** z cytatami i źródłami
-- **Podsumowanie procesu** rozumowania
-- **Wizualizacje danych** i analizy
-- **Rekomendacje** i wnioski strategiczne
+The workflow generates:
+- **Comprehensive research report** at analyst level
+- **Complete documentation** with citations and sources
+- **Process summary** with reasoning
+- **Data visualizations** and analyses
+- **Recommendations** and strategic conclusions
 
-### Struktura raportu
-- **Executive Summary** - kluczowe wnioski
-- **Metodologia** - opis procesu badawczego
-- **Główne findings** - najważniejsze odkrycia
-- **Analiza źródeł** - ocena wiarygodności
-- **Wnioski strategiczne** - rekomendacje
-- **Bibliografia** - pełne cytowania
+### Report Structure
+- **Executive Summary** - key conclusions
+- **Methodology** - research process description
+- **Main findings** - most important discoveries
+- **Source analysis** - credibility assessment
+- **Strategic conclusions** - recommendations
+- **Bibliography** - full citations
 
-### Kolumny wynikowe
-- `research_query` - oryginalne zapytanie
-- `research_summary` - podsumowanie badań
-- `key_findings` - kluczowe odkrycia
-- `sources_analyzed` - liczba przeanalizowanych źródeł
-- `research_duration` - czas trwania badań
-- `confidence_score` - ocena pewności wniosków
-- `report_url` - link do pełnego raportu
-- `research_depth` - głębokość badań
-- `completed_at` - data zakończenia
+### Output Columns
+- `research_query` - original query
+- `research_summary` - research summary
+- `key_findings` - key discoveries
+- `sources_analyzed` - number of analyzed sources
+- `research_duration` - research duration
+- `confidence_score` - confidence assessment of conclusions
+- `report_url` - link to full report
+- `research_depth` - research depth
+- `completed_at` - completion date
 
-## Użycie
+## Usage
 
-1. **Dodaj zapytanie badawcze** do Google Sheets
-2. **Ustaw parametry** badań (głębokość, dziedzina)
-3. **Uruchom workflow**
-4. **Poczekaj 5-30 minut** na zakończenie badań
-5. **Przeanalizuj kompleksowy raport** z cytatami
+1. **Add research query** to Google Sheets
+2. **Set research parameters** (depth, domain)
+3. **Run the workflow**
+4. **Wait 5-30 minutes** for research completion
+5. **Analyze comprehensive report** with citations
 
-## Korzyści
+## Benefits
 
-### Dla profesjonalistów
-- **Oszczędność czasu** - godziny pracy w minutach
-- **Kompleksowe badania** na poziomie analityka
-- **Dokumentacja** z cytatami i źródłami
-- **Weryfikowalne** i wiarygodne wyniki
+### For professionals
+- **Time savings** - hours of work in minutes
+- **Comprehensive research** at analyst level
+- **Documentation** with citations and sources
+- **Verifiable** and reliable results
 
-### Dla firm
-- **Konkurencyjna analiza** w czasie rzeczywistym
-- **Badania rynkowe** i trendów
-- **Raporty strategiczne** dla decyzji biznesowych
-- **Automatyzacja** intensywnej pracy badawczej
+### For companies
+- **Competitive analysis** in real-time
+- **Market research** and trends
+- **Strategic reports** for business decisions
+- **Automation** of intensive research work
 
-### Dla naukowców i badaczy
-- **Przegląd literatury** w dziedzinach specjalistycznych
-- **Synteza wiedzy** z różnych źródeł
-- **Odkrywanie** niszowych informacji
-- **Tworzenie nowej wiedzy** poprzez syntezę
+### For scientists and researchers
+- **Literature review** in specialized fields
+- **Knowledge synthesis** from various sources
+- **Discovery** of niche information
+- **Creating new knowledge** through synthesis
 
-## Różnice vs tradycyjne wyszukiwanie
+## Differences vs traditional search
 
-### Tradycyjne wyszukiwanie
-- Pojedyncze zapytania
-- Ograniczona analiza źródeł
-- Brak syntezy informacji
-- Brak dokumentacji procesu
+### Traditional search
+- Single queries
+- Limited source analysis
+- No information synthesis
+- No process documentation
 
 ### Deep Research Agent
-- Wieloetapowe badania iteracyjne
-- Analiza setek źródeł
-- Synteza i tworzenie nowej wiedzy
-- Pełna dokumentacja z cytatami
+- Multi-step iterative research
+- Analysis of hundreds of sources
+- Synthesis and creation of new knowledge
+- Complete documentation with citations
 
 ---
 
-*Workflow wymaga skonfigurowania kluczy API przed użyciem.* 
+*Workflow requires API keys configuration before use.* 

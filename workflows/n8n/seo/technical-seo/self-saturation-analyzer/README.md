@@ -1,19 +1,19 @@
-# 📊 Analizator Self-Saturation (N8N)
+# 📊 Self-Saturation Analyzer (N8N)
 
-## Opis automatyzacji
+## Automation Description
 
-Workflow N8N ocenia parametr self-saturation na podstawie słów kluczowych z Google Sheets. Analizuje, jak dużo miejsca zajmują snippety, które nie dostarczają linków i wejść na stronę, oraz ocenia szanse na zwykłe wyniki organiczne.
+The N8N workflow evaluates the self-saturation parameter based on keywords from Google Sheets. It analyzes how much space is occupied by snippets that don't provide links and page visits, and assesses the chances for regular organic results.
 
-## Co to jest Self-Saturation?
+## What is Self-Saturation?
 
-Self-saturation to zjawisko, w którym Google wyświetla tak dużo featured snippets, AI Overviews, People Also Ask i innych elementów SERP, że pozostaje mało miejsca na tradycyjne wyniki organiczne z linkami.
+Self-saturation is a phenomenon where Google displays so many featured snippets, AI Overviews, People Also Ask, and other SERP elements that little space remains for traditional organic results with links.
 
-## Jak działa?
+## How it works?
 
-1. **Pobiera słowa kluczowe** z Google Sheets
-2. **Pobiera wyniki wyszukiwania** dla każdego słowa kluczowego z SerpData.io
-3. **Analizuje strukturę SERP** i identyfikuje różne typy wyników
-4. **Oblicza self-saturation score** na podstawie:
+1. **Retrieves keywords** from Google Sheets
+2. **Fetches search results** for each keyword from SerpData.io
+3. **Analyzes SERP structure** and identifies different result types
+4. **Calculates self-saturation score** based on:
    - Featured snippets
    - AI Overviews
    - People Also Ask
@@ -21,125 +21,125 @@ Self-saturation to zjawisko, w którym Google wyświetla tak dużo featured snip
    - Shopping results
    - Video results
    - Map results
-5. **Ocenia szanse na organiczne wyniki** dla każdego słowa kluczowego
-6. **Zapisuje wyniki** do Google Sheets z rekomendacjami
+5. **Assesses chances for organic results** for each keyword
+6. **Saves results** to Google Sheets with recommendations
 
-## Typy wyników analizowanych
+## Analyzed Result Types
 
-### Snippety bez linków (Self-Saturation)
-- **Featured snippets** - odpowiedzi bez linków
-- **AI Overviews** - podsumowania AI
-- **Knowledge panels** - informacje z bazy wiedzy
-- **Rich snippets** - strukturalne dane
-- **Video snippets** - miniaturki video
+### Snippets without links (Self-Saturation)
+- **Featured snippets** - answers without links
+- **AI Overviews** - AI summaries
+- **Knowledge panels** - knowledge base information
+- **Rich snippets** - structured data
+- **Video snippets** - video thumbnails
 
-### Wyniki z linkami (Organic Opportunities)
-- **Organiczne wyniki** - tradycyjne linki
-- **Shopping results** - wyniki zakupowe
-- **Local results** - wyniki lokalne
-- **News results** - wyniki wiadomości
+### Results with links (Organic Opportunities)
+- **Organic results** - traditional links
+- **Shopping results** - shopping results
+- **Local results** - local results
+- **News results** - news results
 
-## Wymagania
+## Requirements
 
-### API i narzędzia
+### APIs and Tools
 - Google Sheets node
 - HTTP Request node ([SerpData.io](https://serpdata.io/) API)
-- HTTP Request node (OpenAI API - opcjonalnie)
-- Google Sheets node (zapis wyników)
+- HTTP Request node (OpenAI API - optional)
+- Google Sheets node (results saving)
 
-### Struktura danych wejściowych
-Google Sheets powinien zawierać kolumny:
-- `keyword` - słowo kluczowe do analizy
-- `target_domain` - Twoja domena (opcjonalnie)
-- `language` - język (domyślnie: pl)
-- `location` - lokalizacja (domyślnie: Poland)
+### Input Data Structure
+Google Sheets should contain columns:
+- `keyword` - keyword to analyze
+- `target_domain` - Your domain (optional)
+- `language` - language (default: en)
+- `location` - location (default: United States)
 
-## Algorytm oceny Self-Saturation
+## Self-Saturation Assessment Algorithm
 
 ### Self-Saturation Score (0-100%)
-1. **Featured snippets** - 20% wagi
-2. **AI Overviews** - 25% wagi
-3. **People Also Ask** - 15% wagi
-4. **Knowledge panels** - 10% wagi
-5. **Video results** - 10% wagi
-6. **Shopping results** - 10% wagi
-7. **Map results** - 10% wagi
+1. **Featured snippets** - 20% weight
+2. **AI Overviews** - 25% weight
+3. **People Also Ask** - 15% weight
+4. **Knowledge panels** - 10% weight
+5. **Video results** - 10% weight
+6. **Shopping results** - 10% weight
+7. **Map results** - 10% weight
 
 ### Organic Opportunities Score (0-100%)
-- **Liczba organicznych wyników** w TOP 10
-- **Pozycje dostępne** dla tradycyjnych linków
-- **Konkurencyjność** organicznych wyników
-- **Potencjał rankingowy** dla nowych stron
+- **Number of organic results** in TOP 10
+- **Available positions** for traditional links
+- **Competitiveness** of organic results
+- **Ranking potential** for new pages
 
-## Konfiguracja
+## Configuration
 
-1. **Przygotuj listę słów kluczowych** w Google Sheets
-2. **Skonfiguruj połączenia** (SerpData.io, Google Sheets)
-3. **Ustaw parametry analizy** (wagi dla różnych typów wyników)
-4. **Skonfiguruj trigger** (ręczny lub czasowy)
+1. **Prepare keyword list** in Google Sheets
+2. **Configure connections** (SerpData.io, Google Sheets)
+3. **Set analysis parameters** (weights for different result types)
+4. **Configure trigger** (manual or scheduled)
 
-## Wyniki
+## Results
 
-Workflow generuje:
-- **Self-saturation score** dla każdego słowa kluczowego
-- **Organic opportunities score** - szanse na organiczne wyniki
-- **Analizę struktury SERP** - rozkład różnych typów wyników
-- **Rekomendacje** dla strategii SEO
-- **Priorytetyzację** słów kluczowych
+The workflow generates:
+- **Self-saturation score** for each keyword
+- **Organic opportunities score** - chances for organic results
+- **SERP structure analysis** - distribution of different result types
+- **Recommendations** for SEO strategy
+- **Keyword prioritization**
 
-### Kolumny wynikowe
-- `keyword` - słowo kluczowe
-- `self_saturation_score` - ocena self-saturation (0-100%)
-- `organic_opportunities_score` - szanse organiczne (0-100%)
-- `featured_snippets_count` - liczba featured snippets
-- `ai_overviews_present` - czy są AI Overviews (Tak/Nie)
-- `paa_questions_count` - liczba pytań PAA
-- `organic_results_count` - liczba organicznych wyników
-- `serp_structure` - struktura SERP (lista typów wyników)
-- `recommendation` - rekomendacja (Target/Avoid/Moderate)
-- `analyzed_at` - data analizy
+### Output Columns
+- `keyword` - keyword
+- `self_saturation_score` - self-saturation assessment (0-100%)
+- `organic_opportunities_score` - organic chances (0-100%)
+- `featured_snippets_count` - number of featured snippets
+- `ai_overviews_present` - whether AI Overviews are present (Yes/No)
+- `paa_questions_count` - number of PAA questions
+- `organic_results_count` - number of organic results
+- `serp_structure` - SERP structure (list of result types)
+- `recommendation` - recommendation (Target/Avoid/Moderate)
+- `analyzed_at` - analysis date
 
-## Interpretacja wyników
+## Results Interpretation
 
 ### Self-Saturation Score
-- **0-30%** - Niska self-saturation, dobre szanse organiczne
-- **31-60%** - Średnia self-saturation, umiarkowane szanse
-- **61-100%** - Wysoka self-saturation, trudne szanse organiczne
+- **0-30%** - Low self-saturation, good organic chances
+- **31-60%** - Medium self-saturation, moderate chances
+- **61-100%** - High self-saturation, difficult organic chances
 
 ### Organic Opportunities Score
-- **80-100%** - Doskonałe szanse na organiczne wyniki
-- **60-79%** - Dobre szanse na organiczne wyniki
-- **40-59%** - Umiarkowane szanse na organiczne wyniki
-- **0-39%** - Trudne szanse na organiczne wyniki
+- **80-100%** - Excellent chances for organic results
+- **60-79%** - Good chances for organic results
+- **40-59%** - Moderate chances for organic results
+- **0-39%** - Difficult chances for organic results
 
-## Użycie
+## Usage
 
-1. **Dodaj słowa kluczowe** do Google Sheets
-2. **Uruchom workflow**
-3. **Przeanalizuj self-saturation scores** w arkuszu wyników
-4. **Priorytetyzuj słowa kluczowe** według organic opportunities
-5. **Dostosuj strategię SEO** na podstawie rekomendacji
+1. **Add keywords** to Google Sheets
+2. **Run the workflow**
+3. **Analyze self-saturation scores** in the results sheet
+4. **Prioritize keywords** according to organic opportunities
+5. **Adjust SEO strategy** based on recommendations
 
-## Korzyści
+## Benefits
 
-### Dla SEO
-- **Identyfikacja słów kluczowych** z potencjałem organicznym
-- **Unikanie słów kluczowych** z wysoką self-saturation
-- **Optymalizacja budżetów** na badania słów kluczowych
-- **Strategia content marketing** bazująca na szansach
+### For SEO
+- **Identification of keywords** with organic potential
+- **Avoiding keywords** with high self-saturation
+- **Optimization of budgets** for keyword research
+- **Content marketing strategy** based on opportunities
 
-### Dla content marketing
-- **Priorytetyzacja tematów** według potencjału organicznego
-- **Dostosowanie treści** do dostępnych typów wyników
-- **Planowanie kampanii** na podstawie self-saturation
-- **A/B testing** różnych podejść
+### For content marketing
+- **Topic prioritization** according to organic potential
+- **Content adaptation** to available result types
+- **Campaign planning** based on self-saturation
+- **A/B testing** of different approaches
 
-### Dla digital marketing
-- **Optymalizacja ROI** badań słów kluczowych
-- **Konkurencyjna analiza** struktury SERP
-- **Raportowanie** dla klientów o szansach organicznych
-- **Strategia link building** bazująca na self-saturation
+### For digital marketing
+- **ROI optimization** of keyword research
+- **Competitive analysis** of SERP structure
+- **Reporting** for clients about organic opportunities
+- **Link building strategy** based on self-saturation
 
 ---
 
-*Workflow wymaga skonfigurowania kluczy API przed użyciem.* 
+*Workflow requires API keys configuration before use.* 
