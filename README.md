@@ -86,7 +86,31 @@ workflows/
 
 ## 🤝 Współtworzenie
 
-Chcesz dodać swoją automatyzację? Sprawdź [CONTRIBUTING.md](CONTRIBUTING.md)!
+Chcesz dodać swoją automatyzację SEO? Dołącz do społeczności!
+
+### 🚀 Jak dodać swoją automatyzację?
+1. **Sprawdź** [CONTRIBUTING.md](CONTRIBUTING.md) - szczegółowe instrukcje
+2. **Użyj** [szablonu README](docs/README_TEMPLATE.md) dla nowych automatyzacji
+3. **Fork** repozytorium i utwórz Pull Request
+4. **Przetestuj** automatyzację przed dodaniem
+
+### 📋 Wymagania dla nowych automatyzacji:
+- ✅ Automatyzacja SEO dla Make lub N8N
+- ✅ Darmowe API i narzędzia
+- ✅ Kompletna dokumentacja
+- ✅ Przetestowana funkcjonalność
+- ✅ Brak kluczy API w kodzie
+
+### 🎯 Kategorie SEO:
+- **Keyword Research** - badania słów kluczowych
+- **Competitor Analysis** - analiza konkurencji  
+- **Content Optimization** - optymalizacja treści
+- **Technical SEO** - techniczne SEO
+
+### 📞 Wsparcie:
+- [Issues](https://github.com/salek7/nodes_hub_automations/issues) - zgłaszanie problemów
+- [Discussions](https://github.com/salek7/nodes_hub_automations/discussions) - dyskusje
+- [Code of Conduct](CODE_OF_CONDUCT.md) - zasady społeczności
 
 ## 📝 Licencja
 
