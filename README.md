@@ -7,10 +7,16 @@ Kolekcja gotowych do użycia automatyzacji SEO, które pomogą Ci zoptymalizowa�
 ## 🎯 Co znajdziesz w tym repozytorium?
 
 ### 📊 Automatyzacje SEO
-- **Analiza słów kluczowych** - automatyczne badanie i analiza słów kluczowych
-- **Analiza konkurencji** - monitoring konkurencji i ich działań SEO
-- **Optymalizacja treści** - automatyzacja procesów content marketing
-- **Technical SEO** - monitoring technicznych aspektów SEO
+
+| Nazwa | Kategoria | Make | N8N | Opis |
+|-------|-----------|------|-----|------|
+| [Generator struktury nagłówków](workflows/make/seo/content-optimization/header-structure-generator/) | Content Optimization | ✅ | [✅](workflows/n8n/seo/content-optimization/header-structure-generator/) | Generuje strukturę nagłówków na podstawie analizy konkurencji |
+| [Generator Query Expansion & Fan-out](workflows/make/seo/keyword-research/query-expansion-generator/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/query-expansion-generator/) | Generuje syntetyczne zapytania zgodnie z patentami Google |
+| [Kompleksowe badania słów kluczowych](workflows/make/seo/keyword-research/comprehensive-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/comprehensive-keyword-research/) | Pełne badania z 7 typami danych w strukturalnych arkuszach |
+| [Klasyfikacja intencji słów kluczowych](workflows/make/seo/keyword-research/intent-classification/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/intent-classification/) | Klasyfikuje słowa kluczowe według intencji użytkownika |
+| [Monitor AI Overviews](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/ai-overviews-monitor/) | Śledzi obecność w AI Overviews Google |
+| [Szybkie badania słów kluczowych](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/rapid-keyword-research/) | Zastępuje godziny pracy sekundami automatyzacji |
+| [Analizator Self-Saturation](workflows/make/seo/technical-seo/self-saturation-analyzer/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/self-saturation-analyzer/) | Ocenia szanse na organiczne wyniki vs self-saturation |
 
 ### 🛠️ Narzędzia
 - **Make (Integromat)** - gotowe scenariusze do importu
