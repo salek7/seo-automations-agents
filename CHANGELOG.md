@@ -1,89 +1,89 @@
 # 📝 Changelog
 
-Wszystkie istotne zmiany w tym projekcie będą udokumentowane w tym pliku.
+All notable changes to this project will be documented in this file.
 
-Format jest oparty na [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-a projekt przestrzega [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
 ### Added
-- Nowe automatyzacje SEO
-- Nowe funkcjonalności w istniejących automatyzacjach
+- New SEO automations
+- New features in existing automations
 
 ### Changed
-- Ulepszenia w istniejących automatyzacjach
-- Aktualizacje dokumentacji
+- Improvements in existing automations
+- Documentation updates
 
 ### Fixed
-- Poprawki błędów w automatyzacjach
-- Poprawki w dokumentacji
+- Bug fixes in automations
+- Documentation fixes
 
 ### Removed
-- Usunięte przestarzałe automatyzacje
-- Usunięte nieaktualne funkcjonalności
+- Removed obsolete automations
+- Removed outdated features
 
 ## [1.0.0] - 2025-01-XX
 
 ### Added
-- **Generator struktury nagłówków** - generuje strukturę nagłówków na podstawie analizy konkurencji
-- **Generator Query Expansion & Fan-out** - generuje syntetyczne zapytania zgodnie z patentami Google
-- **Kompleksowe badania słów kluczowych** - pełne badania z 7 typami danych w strukturalnych arkuszach
-- **Klasyfikacja intencji słów kluczowych** - klasyfikuje słowa kluczowe według intencji użytkownika
-- **Monitor AI Overviews** - śledzi obecność w AI Overviews Google
-- **Szybkie badania słów kluczowych** - zastępuje godziny pracy sekundami automatyzacji
-- **Analizator Self-Saturation** - ocenia szanse na organiczne wyniki vs self-saturation
-- **Deep Research Agent** - agent wieloetapowych badań jak ChatGPT Deep Research
+- **Header Structure Generator** - generates header structure based on competitor analysis
+- **Query Expansion & Fan-out Generator** - generates synthetic queries according to Google patents
+- **Comprehensive Keyword Research** - complete research with 7 data types in structured sheets
+- **Keyword Intent Classification** - classifies keywords by user intent
+- **AI Overviews Monitor** - tracks presence in Google AI Overviews
+- **Rapid Keyword Research** - replaces hours of work with seconds of automation
+- **Self-Saturation Analyzer** - evaluates chances for organic results vs self-saturation
+- **Deep Research Agent** - multi-step research agent like ChatGPT Deep Research
 
-### Added - Dokumentacja i wsparcie
-- Kompletna dokumentacja dla wszystkich automatyzacji
-- Instrukcje instalacji i konfiguracji
-- Przykłady użycia i troubleshooting
-- Integracja z MCP serwerami (Make i N8N)
-- Pliki wsparcia dla współtwórców:
-  - `CONTRIBUTING.md` - instrukcje współtworzenia
-  - `CODE_OF_CONDUCT.md` - kodeks postępowania
-  - `SECURITY.md` - polityka bezpieczeństwa
-  - Szablony dla Issues i Pull Requests
-  - Szablon README dla nowych automatyzacji
+### Added - Documentation and Support
+- Complete documentation for all automations
+- Installation and configuration instructions
+- Usage examples and troubleshooting
+- Integration with MCP servers (Make and N8N)
+- Support files for contributors:
+  - `CONTRIBUTING.md` - contribution instructions
+  - `CODE_OF_CONDUCT.md` - code of conduct
+  - `SECURITY.md` - security policy
+  - Templates for Issues and Pull Requests
+  - README template for new automations
 
 ### Technical
-- Struktura katalogów dla Make i N8N
-- Kategoryzacja automatyzacji SEO
-- Standaryzacja dokumentacji
-- Przygotowanie do współpracy społeczności
+- Directory structure for Make and N8N
+- SEO automation categorization
+- Documentation standardization
+- Community collaboration preparation
 
 ---
 
-## Typy zmian
+## Change Types
 
-- **Added** - nowe funkcjonalności
-- **Changed** - zmiany w istniejących funkcjonalnościach
-- **Deprecated** - funkcjonalności, które zostaną usunięte
-- **Removed** - usunięte funkcjonalności
-- **Fixed** - poprawki błędów
-- **Security** - poprawki bezpieczeństwa
+- **Added** - new features
+- **Changed** - changes in existing features
+- **Deprecated** - features that will be removed
+- **Removed** - removed features
+- **Fixed** - bug fixes
+- **Security** - security fixes
 
-## Jak dodać wpis do changelog?
+## How to add an entry to the changelog?
 
-### Dla nowych automatyzacji:
+### For new automations:
 ```markdown
 ### Added
-- **Nazwa automatyzacji** - krótki opis funkcjonalności
+- **Automation name** - brief feature description
 ```
 
-### Dla poprawek:
+### For bug fixes:
 ```markdown
 ### Fixed
-- Poprawka błędu w [nazwa automatyzacji] - opis problemu
+- Bug fix in [automation name] - problem description
 ```
 
-### Dla ulepszeń:
+### For improvements:
 ```markdown
 ### Changed
-- Ulepszenie [nazwa automatyzacji] - opis zmiany
+- Improvement in [automation name] - change description
 ```
 
 ---
 
-**Dziękujemy wszystkim współtwórcom za wkład w projekt! 🚀** 
+**Thank you to all contributors for their contribution to the project! 🚀** 
