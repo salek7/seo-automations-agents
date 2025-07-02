@@ -17,6 +17,7 @@ Kolekcja gotowych do użycia automatyzacji SEO, które pomogą Ci zoptymalizowa�
 | [Monitor AI Overviews](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/ai-overviews-monitor/) | Śledzi obecność w AI Overviews Google |
 | [Szybkie badania słów kluczowych](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/rapid-keyword-research/) | Zastępuje godziny pracy sekundami automatyzacji |
 | [Analizator Self-Saturation](workflows/make/seo/technical-seo/self-saturation-analyzer/) | Technical SEO | ✅ | [✅](workflows/n8n/seo/technical-seo/self-saturation-analyzer/) | Ocenia szanse na organiczne wyniki vs self-saturation |
+| [Deep Research Agent](workflows/make/seo/keyword-research/deep-research-agent/) | Keyword Research | ✅ | [✅](workflows/n8n/seo/keyword-research/deep-research-agent/) | Agent wieloetapowych badań jak ChatGPT Deep Research |
 
 ### 🛠️ Narzędzia
 - **Make (Integromat)** - gotowe scenariusze do importu
