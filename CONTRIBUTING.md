@@ -18,12 +18,19 @@ workflows/
 │               ├── README.md          # Opis automatyzacji
 │               ├── scenario.json      # Plik Make (opcjonalnie)
 │               └── metadata.json      # Metadane (opcjonalnie)
-└── n8n/
+├── n8n/
+│   └── seo/
+│       └── [kategoria]/
+│           └── [nazwa-automatyzacji]/
+│               ├── README.md          # Opis automatyzacji
+│               ├── workflow.json      # Plik N8N (opcjonalnie)
+│               └── metadata.json      # Metadane (opcjonalnie)
+└── colab/
     └── seo/
         └── [kategoria]/
             └── [nazwa-automatyzacji]/
                 ├── README.md          # Opis automatyzacji
-                ├── workflow.json      # Plik N8N (opcjonalnie)
+                ├── notebook.ipynb     # Plik Google Colab (opcjonalnie)
                 └── metadata.json      # Metadane (opcjonalnie)
 ```
 
@@ -85,6 +92,7 @@ Lista korzyści z używania automatyzacji
 - `README.md` - automation description
 - `scenario.json` - Make file
 - `workflow.json` - N8N file
+- `notebook.ipynb` - Google Colab notebook
 - `metadata.json` - metadata (optional)
 
 ### 4. Code Quality
@@ -151,7 +159,7 @@ Instructions for testing automation
 ### 7. Rules
 
 #### Allowed:
-- ✅ SEO automations for Make and N8N
+- ✅ SEO automations for Make, N8N, and Google Colab
 - ✅ Free APIs and tools
 - ✅ Well-documented automations
 - ✅ Useful for SEO community
@@ -173,6 +181,7 @@ Instructions for testing automation
 #### Useful links:
 - [Make Documentation](https://www.make.com/en/help)
 - [N8N Documentation](https://docs.n8n.io/)
+- [Google Colab Documentation](https://colab.research.google.com/notebooks/)
 - [GitHub Guides](https://guides.github.com/)
 
 ---

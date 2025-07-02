@@ -8,25 +8,30 @@ A collection of ready-to-use SEO automations that will help you optimize marketi
 
 ### 📊 SEO Automations
 
-| Name | Category | Status | Make | N8N | Description |
-|------|----------|--------|------|-----|-------------|
-| [Deep Research Agent](workflows/make/seo/keyword-research/deep-research-agent/) | Keyword Research | 🔄 In Progress | ✅ | [✅](workflows/n8n/seo/keyword-research/deep-research-agent/) | Multi-step research agent like ChatGPT Deep Research |
-| [Self-Saturation Analyzer](workflows/make/seo/technical-seo/self-saturation-analyzer/) | Technical SEO | 🔄 In Progress | ✅ | [✅](workflows/n8n/seo/technical-seo/self-saturation-analyzer/) | Evaluates chances for organic results vs self-saturation |
-| [Comprehensive Keyword Research](workflows/make/seo/keyword-research/comprehensive-keyword-research/) | Keyword Research | 🔄 In Progress | ✅ | [✅](workflows/n8n/seo/keyword-research/comprehensive-keyword-research/) | Complete research with 7 data types in structured sheets |
-| [Header Structure Generator](workflows/make/seo/content-optimization/header-structure-generator/) | Content Optimization | 🔄 In Progress | ✅ | [✅](workflows/n8n/seo/content-optimization/header-structure-generator/) | Generates header structure based on competitor analysis |
-| [Query Expansion & Fan-out Generator](workflows/make/seo/keyword-research/query-expansion-generator/) | Keyword Research | ⏳ In Queue | ✅ | [✅](workflows/n8n/seo/keyword-research/query-expansion-generator/) | Generates synthetic queries according to Google patents |
-| [Keyword Intent Classification](workflows/make/seo/keyword-research/intent-classification/) | Keyword Research | ⏳ In Queue | ✅ | [✅](workflows/n8n/seo/keyword-research/intent-classification/) | Classifies keywords by user intent |
-| [AI Overviews Monitor](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ⏳ In Queue | ✅ | [✅](workflows/n8n/seo/technical-seo/ai-overviews-monitor/) | Tracks presence in Google AI Overviews |
-| [Rapid Keyword Research](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ⏳ In Queue | ✅ | [✅](workflows/n8n/seo/keyword-research/rapid-keyword-research/) | Replaces hours of work with seconds of automation |
+| Name | Category | Status | Make | N8N | Google Colab | Description |
+|------|----------|--------|------|-----|-------------|-------------|
+| [Deep Research Agent](workflows/make/seo/keyword-research/deep-research-agent/) | Keyword Research | 🔄 In Progress | ❌ | ❌ | ❌ | Multi-step research agent like ChatGPT Deep Research |
+| [Self-Saturation Analyzer](workflows/make/seo/technical-seo/self-saturation-analyzer/) | Technical SEO | 🔄 In Progress | ❌ | ❌ | ❌ | Evaluates chances for organic results vs self-saturation |
+| [Comprehensive Keyword Research](workflows/make/seo/keyword-research/comprehensive-keyword-research/) | Keyword Research | 🔄 In Progress | ❌ | ❌ | ❌ | Complete research with 7 data types in structured sheets |
+| [Header Structure Generator](workflows/make/seo/content-optimization/header-structure-generator/) | Content Optimization | 🔄 In Progress | ❌ | ❌ | ❌ | Generates header structure based on competitor analysis |
+| [Query Expansion & Fan-out Generator](workflows/make/seo/keyword-research/query-expansion-generator/) | Keyword Research | ⏳ In Queue | ❌ | ❌ | ❌ | Generates synthetic queries according to Google patents |
+| [Keyword Intent Classification](workflows/make/seo/keyword-research/intent-classification/) | Keyword Research | ⏳ In Queue | ❌ | ❌ | ❌ | Classifies keywords by user intent |
+| [AI Overviews Monitor](workflows/make/seo/technical-seo/ai-overviews-monitor/) | Technical SEO | ⏳ In Queue | ❌ | ❌ | ❌ | Tracks presence in Google AI Overviews |
+| [Rapid Keyword Research](workflows/make/seo/keyword-research/rapid-keyword-research/) | Keyword Research | ⏳ In Queue | ❌ | ❌ | ❌ | Replaces hours of work with seconds of automation |
 
 **Status Legend:**
 - 🔄 **In Progress** - Currently being developed and tested
 - ⏳ **In Queue** - Planned for development
 - ✅ **Ready** - Fully implemented and tested
 
+**Availability:**
+- ✅ **Available** - Ready to import and use
+- ❌ **Not Available** - Not yet implemented
+
 ### 🛠️ Tools
 - **Make (Integromat)** - ready-to-import scenarios
 - **N8N** - workflows to copy
+- **Google Colab** - Jupyter notebooks for data analysis and automation
 
 ### 🤖 AI Assistant Integration (MCP)
 
@@ -61,7 +66,13 @@ workflows/
 │       ├── competitor-analysis/
 │       ├── content-optimization/
 │       └── technical-seo/
-└── n8n/            # N8N automations
+├── n8n/            # N8N automations
+│   └── seo/        # SEO category
+│       ├── keyword-research/
+│       ├── competitor-analysis/
+│       ├── content-optimization/
+│       └── technical-seo/
+└── colab/          # Google Colab notebooks
     └── seo/        # SEO category
         ├── keyword-research/
         ├── competitor-analysis/
@@ -82,6 +93,12 @@ workflows/
 2. Choose the workflow you're interested in
 3. Copy the JSON content
 4. Paste in N8N: **Import from JSON**
+
+### For Google Colab
+1. Go to the `workflows/colab/seo/` directory
+2. Choose the notebook you're interested in
+3. Open the `.ipynb` file in Google Colab
+4. Follow the instructions in the notebook
 
 ## 📚 Documentation
 

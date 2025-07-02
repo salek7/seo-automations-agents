@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - New SEO automations
 - New features in existing automations
+- Google Colab support for SEO automations
 
 ### Changed
 - Improvements in existing automations
@@ -40,6 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Installation and configuration instructions
 - Usage examples and troubleshooting
 - Integration with MCP servers (Make and N8N)
+- Support for Google Colab notebooks
 - Support files for contributors:
   - `CONTRIBUTING.md` - contribution instructions
   - `CODE_OF_CONDUCT.md` - code of conduct
@@ -48,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - README template for new automations
 
 ### Technical
-- Directory structure for Make and N8N
+- Directory structure for Make, N8N, and Google Colab
 - SEO automation categorization
 - Documentation standardization
 - Community collaboration preparation

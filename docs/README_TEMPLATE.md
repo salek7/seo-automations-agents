@@ -27,10 +27,18 @@ Google Sheets should contain columns:
 
 ## Configuration
 
+### For Make/N8N:
 1. **Configure API keys** in Make/N8N
 2. **Prepare Google Sheets** with input data
 3. **Set automation parameters**
 4. **Test** on a small dataset
+
+### For Google Colab:
+1. **Upload the notebook** to Google Colab
+2. **Install required packages** (run the first cell)
+3. **Configure API keys** in the notebook
+4. **Prepare input data** (CSV, Google Sheets, etc.)
+5. **Run cells** step by step
 
 ## Results
 
@@ -114,6 +122,7 @@ Need help? Check:
 - [API Documentation](https://serpdata.io/docs)
 - [Make Help Center](https://www.make.com/en/help)
 - [N8N Documentation](https://docs.n8n.io/)
+- [Google Colab Documentation](https://colab.research.google.com/notebooks/)
 
 ---
 
