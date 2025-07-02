@@ -22,33 +22,33 @@ Examples of unacceptable behavior:
 * Publishing others' private information, such as physical or electronic addresses, without explicit permission
 * Other behavior that could reasonably be considered inappropriate in a professional setting
 
-## Nasze Obowiązki
+## Our Responsibilities
 
-Maintainerzy projektu są odpowiedzialni za wyjaśnienie standardów akceptowalnego zachowania i oczekuje się od nich podjęcia odpowiednich i sprawiedliwych działań korygujących w odpowiedzi na wszelkie przypadki niedopuszczalnego zachowania.
+Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any cases of unacceptable behavior.
 
-Maintainerzy projektu mają prawo i odpowiedzialność usuwania, edytowania lub odrzucania komentarzy, commitów, kodu, edycji wiki, issues i innych wkładów, które nie są zgodne z tym Kodeksem Postępowania, oraz tymczasowego lub stałego zbanowania każdego współtwórcy za inne zachowania, które uznają za nieodpowiednie, groźne, obraźliwe lub szkodliwe.
+Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned with this Code of Conduct, and will temporarily or permanently ban any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 
-## Zakres
+## Scope
 
-Ten Kodeks Postępowania ma zastosowanie zarówno w przestrzeniach projektu, jak i w przestrzeniach publicznych, gdy dana osoba reprezentuje projekt lub jego społeczność. Przykłady reprezentowania projektu lub społeczności obejmują używanie oficjalnego adresu e-mail projektu, publikowanie za pośrednictwem oficjalnego konta w mediach społecznościowych lub działanie jako wyznaczony przedstawiciel na wydarzeniu online lub offline. Reprezentacja projektu może być dalej określona i wyjaśniona przez maintainerów projektu.
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
 
-## Egzekwowanie
+## Enforcement
 
-Przypadki nadużyć, nękania lub innego niedopuszczalnego zachowania mogą być zgłaszane przez kontakt z zespołem projektu. Wszystkie skargi będą przeglądane i badane, co doprowadzi do odpowiedzi, która jest uważana za konieczną i odpowiednią do okoliczności. Zespół projektu jest zobowiązany do zachowania poufności w sprawie osoby zgłaszającej incydent. Dalsze szczegóły konkretnych polityk egzekwowania mogą być ogłaszane osobno.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
 
-Maintainerzy projektu, którzy nie przestrzegają lub nie egzekwują Kodeksu Postępowania w dobrej wierze, mogą ponieść tymczasowe lub stałe konsekwencje, które zostaną określone przez innych członków kierownictwa projektu.
+Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
-## Atrybucja
+## Attribution
 
-Ten Kodeks Postępowania jest adaptacją [Contributor Covenant](https://www.contributor-covenant.org), wersja 1.4, dostępna pod adresem https://www.contributor-covenant.org/pl/version/1/4/code-of-conduct.html
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
 
-## Kontakt
+## Contact
 
-Jeśli masz pytania dotyczące tego Kodeksu Postępowania, skontaktuj się z nami:
+If you have questions about this Code of Conduct, please contact us:
 
-* Otwórz [Issue](https://github.com/salek7/nodes_hub_automations/issues) na GitHub
-* Napisz e-mail na adres podany w profilu maintainera
+* Open an [Issue](https://github.com/salek7/nodes_hub_automations/issues) on GitHub
+* Write an email to the address provided in the maintainer's profile
 
 ---
 
-**Dziękujemy za przestrzeganie tych zasad! 🤝** 
+**Thank you for following these guidelines! 🤝** 

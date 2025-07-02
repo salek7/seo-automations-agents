@@ -25,96 +25,96 @@ Google Sheets should contain columns:
 - `language` - search language
 - `country` - search country
 
-## Konfiguracja
+## Configuration
 
-1. **Skonfiguruj API klucze** w Make/N8N
-2. **Przygotuj Google Sheets** z danymi wejściowymi
-3. **Ustaw parametry** automatyzacji
-4. **Przetestuj** na małym zestawie danych
+1. **Configure API keys** in Make/N8N
+2. **Prepare Google Sheets** with input data
+3. **Set automation parameters**
+4. **Test** on a small dataset
 
-## Wyniki
+## Results
 
-Automatyzacja generuje:
-- **Analizę konkurencji** z TOP 10 wyników
-- **Strukturę nagłówków** na podstawie analizy
-- **Rekomendacje** optymalizacji treści
-- **Raport** w formacie PDF/Google Docs
+The automation generates:
+- **Competitor analysis** from TOP 10 results
+- **Header structure** based on analysis
+- **Content optimization recommendations**
+- **Report** in PDF/Google Docs format
 
-### Struktura danych wyjściowych
-- `keyword` - oryginalne słowo kluczowe
-- `competitors` - lista konkurentów
-- `header_structure` - proponowana struktura nagłówków
-- `recommendations` - rekomendacje optymalizacji
-- `report_url` - link do pełnego raportu
-- `completed_at` - data zakończenia analizy
+### Output Data Structure
+- `keyword` - original keyword
+- `competitors` - list of competitors
+- `header_structure` - proposed header structure
+- `recommendations` - optimization recommendations
+- `report_url` - link to full report
+- `completed_at` - analysis completion date
 
-## Użycie
+## Usage
 
-1. **Dodaj słowa kluczowe** do Google Sheets
-2. **Uruchom automatyzację**
-3. **Poczekaj** na zakończenie analizy
-4. **Pobierz raport** z wynikami
-5. **Zastosuj rekomendacje** w swojej treści
+1. **Add keywords** to Google Sheets
+2. **Run the automation**
+3. **Wait** for analysis completion
+4. **Download report** with results
+5. **Apply recommendations** to your content
 
-## Korzyści
+## Benefits
 
-### Dla SEO specjalistów
-- **Oszczędność czasu** - automatyzacja analizy konkurencji
-- **Lepsze wyniki** - oparte na danych rekomendacje
-- **Skalowalność** - analiza wielu słów kluczowych
-- **Standaryzacja** - jednolity proces analizy
+### For SEO specialists
+- **Time savings** - automation of competitor analysis
+- **Better results** - data-driven recommendations
+- **Scalability** - analysis of multiple keywords
+- **Standardization** - consistent analysis process
 
-### Dla firm
-- **Konkurencyjna przewaga** - lepsze pozycjonowanie
-- **Optymalizacja treści** - wyższe pozycje w Google
-- **ROI** - szybsze osiąganie celów SEO
-- **Automatyzacja** - mniej pracy manualnej
+### For companies
+- **Competitive advantage** - better positioning
+- **Content optimization** - higher Google rankings
+- **ROI** - faster achievement of SEO goals
+- **Automation** - less manual work
 
-## Przykłady
+## Examples
 
-### Przykład 1: Analiza słowa kluczowego "SEO tools"
+### Example 1: Analysis of keyword "SEO tools"
 ```
 Input: "SEO tools"
 Output: 
-- 5 konkurentów z TOP 10
-- Struktura nagłówków: H1, H2, H3
-- Rekomendacje: dodaj sekcję "Porównanie narzędzi"
+- 5 competitors from TOP 10
+- Header structure: H1, H2, H3
+- Recommendations: add "Tool Comparison" section
 ```
 
-### Przykład 2: Analiza domeny konkurencyjnej
+### Example 2: Analysis of competitor domain
 ```
 Input: "example.com"
 Output:
-- Analiza 10 stron konkurencji
-- Wzorce struktury treści
-- Rekomendacje optymalizacji
+- Analysis of 10 competitor pages
+- Content structure patterns
+- Optimization recommendations
 ```
 
 ## Troubleshooting
 
-### Problem: Błąd API
-**Rozwiązanie**: Sprawdź czy klucz API jest poprawny i ma odpowiednie uprawnienia.
+### Problem: API Error
+**Solution**: Check if the API key is correct and has appropriate permissions.
 
-### Problem: Brak wyników
-**Rozwiązanie**: Sprawdź czy słowo kluczowe jest poprawne i czy API zwraca wyniki.
+### Problem: No Results
+**Solution**: Check if the keyword is correct and if the API returns results.
 
-### Problem: Błąd Google Sheets
-**Rozwiązanie**: Sprawdź czy struktura danych wejściowych jest poprawna.
+### Problem: Google Sheets Error
+**Solution**: Check if the input data structure is correct.
 
 ## Limitations
 
-- **Ograniczenia API** - maksymalnie 100 zapytań dziennie
-- **Języki** - obsługuje tylko angielski i polski
-- **Domeny** - maksymalnie 10 domen na raz
-- **Czas wykonania** - może trwać do 5 minut
+- **API limitations** - maximum 100 queries per day
+- **Languages** - supports only English and Polish
+- **Domains** - maximum 10 domains at once
+- **Execution time** - may take up to 5 minutes
 
-## Wsparcie
+## Support
 
-Potrzebujesz pomocy? Sprawdź:
-- [Dokumentacja API](https://serpdata.io/docs)
+Need help? Check:
+- [API Documentation](https://serpdata.io/docs)
 - [Make Help Center](https://www.make.com/en/help)
 - [N8N Documentation](https://docs.n8n.io/)
 
 ---
 
-*Automatyzacja wymaga skonfigurowania kluczy API przed użyciem.* 
+*Automation requires API keys configuration before use.* 

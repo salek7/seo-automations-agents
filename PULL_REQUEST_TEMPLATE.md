@@ -1,35 +1,35 @@
-## 🎯 Co zostało dodane/zmienione?
-Krótki opis zmian wprowadzonych w tym PR.
+## 🎯 What was added/changed?
+Brief description of changes introduced in this PR.
 
-## 📁 Pliki dodane/zmienione
-- `workflows/make/seo/[kategoria]/[nazwa]/README.md`
-- `workflows/n8n/seo/[kategoria]/[nazwa]/README.md`
-- `workflows/make/seo/[kategoria]/[nazwa]/scenario.json` (opcjonalnie)
-- `workflows/n8n/seo/[kategoria]/[nazwa]/workflow.json` (opcjonalnie)
+## 📁 Files added/changed
+- `workflows/make/seo/[category]/[name]/README.md`
+- `workflows/n8n/seo/[category]/[name]/README.md`
+- `workflows/make/seo/[category]/[name]/scenario.json` (optional)
+- `workflows/n8n/seo/[category]/[name]/workflow.json` (optional)
 
-## ✅ Co zostało sprawdzone?
-- [ ] Automatyzacja działa w Make/N8N
-- [ ] README jest kompletne i zgodne z szablonem
-- [ ] Nie ma błędów w kodzie
-- [ ] Główny README został zaktualizowany (jeśli dodano nową automatyzację)
-- [ ] Nie ma kluczy API w kodzie
-- [ ] Kod jest czytelny i dobrze udokumentowany
+## ✅ What was checked?
+- [ ] Automation works in Make/N8N
+- [ ] README is complete and follows the template
+- [ ] No errors in code
+- [ ] Main README was updated (if new automation was added)
+- [ ] No API keys in code
+- [ ] Code is readable and well documented
 
-## 🧪 Jak przetestować?
-1. Skopiuj automatyzację do Make/N8N
-2. Skonfiguruj wymagane API
-3. Uruchom automatyzację
-4. Sprawdź czy wyniki są poprawne
+## 🧪 How to test?
+1. Copy automation to Make/N8N
+2. Configure required APIs
+3. Run the automation
+4. Check if results are correct
 
-## 📸 Zrzuty ekranu
-Jeśli to możliwe, dodaj zrzuty ekranu pokazujące działanie automatyzacji.
+## 📸 Screenshots
+If possible, add screenshots showing the automation in action.
 
-## 🔗 Powiązane issues
-Zamknij issue: #(numer issue)
+## 🔗 Related issues
+Close issue: #(issue number)
 
-## 📝 Dodatkowe informacje
-Wszelkie dodatkowe informacje, które mogą być przydatne dla reviewerów.
+## 📝 Additional information
+Any additional information that may be useful for reviewers.
 
 ---
 
-**Szablon PR - usuń ten tekst przed wysłaniem** 
+**PR template - remove this text before submitting** 

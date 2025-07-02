@@ -1,27 +1,27 @@
-## 🐛 Opis problemu
-Krótki i jasny opis problemu.
+## 🐛 Problem Description
+Brief and clear description of the problem.
 
-## 🔄 Kroki do reprodukcji
-1. Przejdź do '...'
-2. Kliknij na '...'
-3. Przewiń w dół do '...'
-4. Zobacz błąd
+## 🔄 Steps to Reproduce
+1. Go to '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
 
-## ✅ Oczekiwane zachowanie
-Jasny i zwięzły opis tego, co powinno się wydarzyć.
+## ✅ Expected Behavior
+Clear and concise description of what should happen.
 
-## 📸 Zrzuty ekranu
-Jeśli to możliwe, dodaj zrzuty ekranu, aby pomóc wyjaśnić problem.
+## 📸 Screenshots
+If possible, add screenshots to help explain the problem.
 
-## 💻 Informacje o środowisku
-- **Platforma**: [np. Make, N8N]
-- **Wersja**: [np. 1.0.0]
-- **Przeglądarka**: [np. Chrome, Safari]
-- **System operacyjny**: [np. macOS, Windows]
+## 💻 Environment Information
+- **Platform**: [e.g. Make, N8N]
+- **Version**: [e.g. 1.0.0]
+- **Browser**: [e.g. Chrome, Safari]
+- **Operating System**: [e.g. macOS, Windows]
 
-## 📝 Dodatkowy kontekst
-Dodaj tutaj wszelkie inne informacje o problemie.
+## 📝 Additional Context
+Add any other information about the problem here.
 
 ---
 
-**Szablon issue - usuń ten tekst przed wysłaniem** 
+**Issue template - remove this text before submitting** 
