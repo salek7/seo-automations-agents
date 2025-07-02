@@ -46,40 +46,124 @@ Each automation must have a `README.md` file with the following sections:
 
 #### Required sections:
 ```markdown
-# 🎯 Nazwa automatyzacji
+# 🎯 Automation Name
 
-## Opis automatyzacji
-Krótki opis tego, co robi automatyzacja (2-3 zdania).
+## Automation Description
+Brief description of what the automation does (2-3 sentences).
 
-## Jak działa?
-1. Krok 1
-2. Krok 2
-3. Krok 3
+## How it works?
+1. Step 1
+2. Step 2
+3. Step 3
 
-## Wymagania
-### API i narzędzia
-- Lista wymaganych API i narzędzi
+## Requirements
+### APIs and Tools
+- List of required APIs and tools
 
-### Struktura danych wejściowych
-Opis struktury danych wejściowych (Google Sheets, etc.)
+### Input Data Structure
+Description of input data structure (Google Sheets, etc.)
 
-## Konfiguracja
-Instrukcje konfiguracji
+## Configuration
+Configuration instructions
 
-## Wyniki
-Opis wyników i struktury danych wyjściowych
+## Results
+Description of results and output data structure
 
-## Użycie
-Instrukcje użycia
+## Usage
+Usage instructions
 
-## Korzyści
-Lista korzyści z używania automatyzacji
+## Benefits
+List of benefits from using the automation
 ```
 
 #### Optional sections:
 - `Examples` - Usage examples
 - `Troubleshooting` - Problem solving
 - `Limitations` - Limitations
+- `Technical Requirements` - Technical requirements
+- `Cost Considerations` - Cost analysis
+- `Use Cases` - Specific use cases
+- `Performance Notes` - Performance information
+
+#### Example README structure (based on Header Structure Generator):
+
+```markdown
+# 🎯 Header Structure Generator
+
+## Automation Description
+The Header Structure Generator is an advanced SEO automation that creates comprehensive article outlines and header structures based on competitor analysis and keyword research. This automation combines SERP analysis, content extraction, and AI-powered outline generation to help content creators develop well-structured, SEO-optimized articles.
+
+## How it works?
+1. Retrieves keywords from Google Sheets
+2. Analyzes search results for each keyword using SerpData API
+3. Extracts content from top 5 competitor URLs using Jina AI
+4. Processes and aggregates competitor content
+5. Extracts relevant facts using OpenAI GPT-4o-mini
+6. Generates article outline using OpenAI GPT-4o
+7. Updates Google Sheets with results
+
+## Requirements
+### APIs and Tools
+- Google Sheets API
+- SerpData API for SERP analysis
+- Jina AI for content extraction
+- OpenAI API (GPT-4o-mini and GPT-4o)
+
+### Input Data Structure
+Google Sheets with columns:
+- Column A: "Keyword" (input)
+- Column B: "Serps" (output)
+- Column C: "Facts" (output)
+- Column D: "Outline" (output)
+
+## Configuration
+1. Import the JSON file into Make
+2. Configure Google Sheets connection
+3. Add SerpData API Bearer token
+4. Configure OpenAI API connection
+5. Update spreadsheet ID and sheet name
+
+## Results
+- **Column B**: SERP analysis results (JSON format)
+- **Column C**: Extracted facts from competitor content (XML format)
+- **Column D**: Generated article outline (HTML format)
+
+## Usage
+1. Add keywords to column A of Google Sheets
+2. Automation processes each new row automatically
+3. Results appear in columns B, C, and D
+
+## Benefits
+- Time savings: Automates hours of manual competitor research
+- Quality improvement: Based on actual SERP analysis
+- SEO optimization: Creates outlines optimized for search engines
+- Consistency: Provides standardized outline structure
+- Scalability: Can process multiple keywords efficiently
+- Data-driven: Uses real competitor data to inform content strategy
+
+## Technical Requirements
+- Make.com account with appropriate plan
+- SerpData API subscription
+- OpenAI API access
+- Google Sheets with proper permissions
+
+## Cost Considerations
+- SerpData API calls per keyword
+- OpenAI API tokens for fact extraction and outline generation
+- Make.com operations based on your plan
+
+## Use Cases
+- Content Marketing Teams: Generate outlines for blog posts
+- SEO Agencies: Create content briefs for clients
+- Digital Publishers: Develop article structures
+- E-commerce Sites: Create product category content outlines
+
+## Performance Notes
+- Total processing time: 80-125 seconds per keyword
+- Parallel processing for content extraction
+- Error handling for failed extractions
+- Respects API rate limits
+```
 
 ### 3. Naming
 
