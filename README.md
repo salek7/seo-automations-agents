@@ -102,19 +102,16 @@ workflows/
 
 ## 📚 Documentation
 
-- [📖 Installation guides](docs/installation-guides/)
-- [📋 Usage guides](docs/usage-guides/)
-- [💡 Examples](docs/examples/)
+All documentation is included in each automation's README.md file. For contribution guidelines and templates, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 🤝 Contributing
 
 Want to add your SEO automation? Join the community!
 
 ### 🚀 How to add your automation?
-1. **Check** [CONTRIBUTING.md](CONTRIBUTING.md) - detailed instructions
-2. **Use** [README template](docs/README_TEMPLATE.md) for new automations
-3. **Fork** the repository and create a Pull Request
-4. **Test** the automation before adding
+1. **Check** [CONTRIBUTING.md](CONTRIBUTING.md) - detailed instructions and templates
+2. **Fork** the repository and create a Pull Request
+3. **Test** the automation before adding
 
 ### 📋 Requirements for new automations:
 - ✅ SEO automation for Make or N8N
