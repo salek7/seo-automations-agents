@@ -1,4 +1,4 @@
-# 🚀 SEO Automations and Agents
+# 🚀 SEO Automations and Agents by Nodes Hub
 
 **Free SEO Automations for Make, N8N and Google Colab**
 
