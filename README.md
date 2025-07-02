@@ -1,8 +1,8 @@
-# 🚀 Nodes Hub Automations
+# 🚀 SEO Automations and Agents
 
-**Free SEO Automations for Make and N8N**
+**Free SEO Automations for Make, N8N and Google Colab**
 
-A collection of ready-to-use SEO automations that will help you optimize marketing and analytical processes. All automations are free and ready to import in Make (Integromat) and N8N.
+A collection of ready-to-use SEO automations and AI agents that will help you optimize marketing and analytical processes. All automations are free and ready to import in Make (Integromat), N8N, and Google Colab.
 
 ## 🎯 What you'll find in this repository?
 
@@ -130,8 +130,8 @@ Want to add your SEO automation? Join the community!
 - **Technical SEO** - technical SEO
 
 ### 📞 Support:
-- [Issues](https://github.com/salek7/nodes_hub_automations/issues) - report problems
-- [Discussions](https://github.com/salek7/nodes_hub_automations/discussions) - discussions
+- [Issues](https://github.com/salek7/seo-automations-agents/issues) - report problems
+- [Discussions](https://github.com/salek7/seo-automations-agents/discussions) - discussions
 - [Code of Conduct](CODE_OF_CONDUCT.md) - community guidelines
 
 ## 📝 License

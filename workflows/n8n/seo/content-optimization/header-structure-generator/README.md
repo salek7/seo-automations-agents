@@ -1,54 +1,54 @@
-# 📝 Generator struktury nagłówków (N8N)
+# 📝 Header Structure Generator (N8N)
 
-## Opis automatyzacji
+## Automation Description
 
-Workflow N8N generuje optymalną strukturę nagłówków dla artykułów SEO na podstawie analizy treści konkurencji.
+The N8N workflow generates optimal header structure for SEO articles based on competitor content analysis.
 
-## Jak działa?
+## How it works?
 
-1. **Pobiera słowa kluczowe** z Google Sheets
-2. **Analizuje wyniki wyszukiwania** dla każdego słowa kluczowego
-3. **Pobiera treści** z TOP wyników konkurencji
-4. **Analizuje strukturę nagłówków** w treściach konkurencji
-5. **Generuje listę nagłówków** za pomocą modelu językowego
-6. **Zapisuje wyniki** do Google Sheets
+1. **Retrieves keywords** from Google Sheets
+2. **Analyzes search results** for each keyword
+3. **Fetches content** from TOP competitor results
+4. **Analyzes header structure** in competitor content
+5. **Generates header list** using language model
+6. **Saves results** to Google Sheets
 
-## Wymagania
+## Requirements
 
-### API i narzędzia
+### APIs and Tools
 - Google Sheets node
 - HTTP Request node ([SerpData.io](https://serpdata.io/) API)
 - HTTP Request node (OpenAI API)
 - Web Scraping node
-- Google Sheets node (zapis wyników)
+- Google Sheets node (results saving)
 
-### Struktura danych wejściowych
-Google Sheets powinien zawierać kolumny:
-- `keyword` - słowo kluczowe do analizy
-- `url` - URL strony docelowej (opcjonalnie)
+### Input Data Structure
+Google Sheets should contain columns:
+- `keyword` - keyword to analyze
+- `url` - target page URL (optional)
 
-## Konfiguracja
+## Configuration
 
-1. Skonfiguruj połączenia z Google Sheets
-2. Ustaw klucze API (SerpAPI, OpenAI)
-3. Skonfiguruj parametry generowania
-4. Ustaw trigger (ręczny lub czasowy)
+1. Configure Google Sheets connections
+2. Set API keys (SerpAPI, OpenAI)
+3. Configure generation parameters
+4. Set trigger (manual or scheduled)
 
-## Wyniki
+## Results
 
-Workflow generuje:
-- Listę nagłówków H1, H2, H3
-- Sugestie struktury artykułu
-- Analizę pokrycia słów kluczowych
-- Rekomendacje optymalizacji
+The workflow generates:
+- List of H1, H2, H3 headers
+- Article structure suggestions
+- Keyword coverage analysis
+- Optimization recommendations
 
-## Użycie
+## Usage
 
-1. Dodaj słowa kluczowe do Google Sheets
-2. Uruchom workflow
-3. Sprawdź wygenerowaną strukturę w arkuszu wyników
-4. Dostosuj nagłówki według potrzeb
+1. Add keywords to Google Sheets
+2. Run the workflow
+3. Check generated structure in results sheet
+4. Adjust headers as needed
 
 ---
 
-*Workflow wymaga skonfigurowania kluczy API przed użyciem.* 
+*Workflow requires API keys configuration before use.* 

@@ -1,53 +1,53 @@
-# 📝 Generator struktury nagłówków
+# 📝 Header Structure Generator
 
-## Opis automatyzacji
+## Automation Description
 
-Automatyzacja generuje optymalną strukturę nagłówków dla artykułów SEO na podstawie analizy treści konkurencji.
+The automation generates optimal header structure for SEO articles based on competitor content analysis.
 
-## Jak działa?
+## How it works?
 
-1. **Pobiera słowa kluczowe** z Google Sheets
-2. **Analizuje wyniki wyszukiwania** dla każdego słowa kluczowego
-3. **Pobiera treści** z TOP wyników konkurencji
-4. **Analizuje strukturę nagłówków** w treściach konkurencji
-5. **Generuje listę nagłówków** za pomocą modelu językowego
-6. **Zapisuje wyniki** do Google Sheets
+1. **Retrieves keywords** from Google Sheets
+2. **Analyzes search results** for each keyword
+3. **Fetches content** from TOP competitor results
+4. **Analyzes header structure** in competitor content
+5. **Generates header list** using language model
+6. **Saves results** to Google Sheets
 
-## Wymagania
+## Requirements
 
-### API i narzędzia
+### APIs and Tools
 - Google Sheets API
-- [SerpData.io](https://serpdata.io/) API do pobierania wyników wyszukiwania
-- OpenAI API (lub podobne) do generowania nagłówków
-- Web Scraping API do pobierania treści
+- [SerpData.io](https://serpdata.io/) API for fetching search results
+- OpenAI API (or similar) for generating headers
+- Web Scraping API for content retrieval
 
-### Struktura danych wejściowych
-Google Sheets powinien zawierać kolumny:
-- `keyword` - słowo kluczowe do analizy
-- `url` - URL strony docelowej (opcjonalnie)
+### Input Data Structure
+Google Sheets should contain columns:
+- `keyword` - keyword to analyze
+- `url` - target page URL (optional)
 
-## Konfiguracja
+## Configuration
 
-1. Skonfiguruj połączenia z API
-2. Ustaw ID arkusza Google Sheets
-3. Skonfiguruj parametry generowania (liczba nagłówków, styl)
-4. Ustaw częstotliwość uruchamiania
+1. Configure API connections
+2. Set Google Sheets ID
+3. Configure generation parameters (number of headers, style)
+4. Set execution frequency
 
-## Wyniki
+## Results
 
-Automatyzacja generuje:
-- Listę nagłówków H1, H2, H3
-- Sugestie struktury artykułu
-- Analizę pokrycia słów kluczowych
-- Rekomendacje optymalizacji
+The automation generates:
+- List of H1, H2, H3 headers
+- Article structure suggestions
+- Keyword coverage analysis
+- Optimization recommendations
 
-## Użycie
+## Usage
 
-1. Dodaj słowa kluczowe do Google Sheets
-2. Uruchom automatyzację
-3. Sprawdź wygenerowaną strukturę w arkuszu wyników
-4. Dostosuj nagłówki według potrzeb
+1. Add keywords to Google Sheets
+2. Run the automation
+3. Check generated structure in results sheet
+4. Adjust headers as needed
 
 ---
 
-*Automatyzacja wymaga skonfigurowania kluczy API przed użyciem.* 
+*Automation requires API keys configuration before use.* 

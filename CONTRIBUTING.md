@@ -1,6 +1,6 @@
 # 🤝 Contributing
 
-Thank you for your interest in contributing to Nodes Hub Automations! This file contains all the information needed to add your automation to the repository.
+Thank you for your interest in contributing to SEO Automations and Agents! This file contains all the information needed to add your automation to the repository.
 
 ## 📋 How to add your automation?
 
@@ -112,7 +112,7 @@ Lista korzyści z używania automatyzacji
 ### 5. Adding process
 
 #### Step 1: Fork the repository
-1. Go to the [repository](https://github.com/salek7/nodes_hub_automations)
+1. Go to the [repository](https://github.com/salek7/seo-automations-agents)
 2. Click "Fork" in the top right corner
 3. Clone your forked repository
 
@@ -174,7 +174,7 @@ Instructions for testing automation
 ### 8. Support
 
 #### Need help?
-- Open an [Issue](https://github.com/salek7/nodes_hub_automations/issues)
+- Open an [Issue](https://github.com/salek7/seo-automations-agents/issues)
 - Check existing automations as examples
 - Contact maintainers
 
