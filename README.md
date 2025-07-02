@@ -22,8 +22,16 @@ Kolekcja gotowych do użycia automatyzacji SEO, które pomogą Ci zoptymalizowa�
 workflows/
 ├── make/           # Automatyzacje dla Make
 │   └── seo/        # Kategoria SEO
+│       ├── keyword-research/
+│       ├── competitor-analysis/
+│       ├── content-optimization/
+│       └── technical-seo/
 └── n8n/            # Automatyzacje dla N8N
     └── seo/        # Kategoria SEO
+        ├── keyword-research/
+        ├── competitor-analysis/
+        ├── content-optimization/
+        └── technical-seo/
 ```
 
 ## 🚀 Szybki start
