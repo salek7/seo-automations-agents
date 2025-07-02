@@ -13,25 +13,25 @@ Each automation should have the following structure:
 workflows/
 ├── make/
 │   └── seo/
-│       └── [kategoria]/
-│           └── [nazwa-automatyzacji]/
-│               ├── README.md          # Opis automatyzacji
-│               ├── scenario.json      # Plik Make (opcjonalnie)
-│               └── metadata.json      # Metadane (opcjonalnie)
+│       └── [category]/
+│           └── [automation-name]/
+│               ├── README.md          # Automation description
+│               ├── scenario.json      # Make file (optional)
+│               └── metadata.json      # Metadata (optional)
 ├── n8n/
 │   └── seo/
-│       └── [kategoria]/
-│           └── [nazwa-automatyzacji]/
-│               ├── README.md          # Opis automatyzacji
-│               ├── workflow.json      # Plik N8N (opcjonalnie)
-│               └── metadata.json      # Metadane (opcjonalnie)
+│       └── [category]/
+│           └── [automation-name]/
+│               ├── README.md          # Automation description
+│               ├── workflow.json      # N8N file (optional)
+│               └── metadata.json      # Metadata (optional)
 └── colab/
     └── seo/
-        └── [kategoria]/
-            └── [nazwa-automatyzacji]/
-                ├── README.md          # Opis automatyzacji
-                ├── notebook.ipynb     # Plik Google Colab (opcjonalnie)
-                └── metadata.json      # Metadane (opcjonalnie)
+        └── [category]/
+            └── [automation-name]/
+                ├── README.md          # Automation description
+                ├── notebook.ipynb     # Google Colab file (optional)
+                └── metadata.json      # Metadata (optional)
 ```
 
 #### SEO Categories
@@ -168,13 +168,14 @@ Google Sheets with columns:
 ### 3. Naming
 
 #### Directory names:
-- Use `kebab-case` (e.g., `keyword-research`)
+- Use `kebab-case` (e.g., `keyword-research`, `header-structure-generator`)
 - Avoid spaces and special characters
 - Use descriptive names
+- Use English names for consistency
 
 #### File names:
 - `README.md` - automation description
-- `scenario.json` - Make file
+- `scenario.json` - Make file (or custom name like `Header Structure Generator.json`)
 - `workflow.json` - N8N file
 - `notebook.ipynb` - Google Colab notebook
 - `metadata.json` - metadata (optional)
